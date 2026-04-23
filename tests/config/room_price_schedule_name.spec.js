@@ -1,0 +1,53 @@
+import { test, expect } from '@playwright/test';
+
+test('test', async ({ page }) => {
+  await page.goto('https://v2d.ceyinfo.com/');
+  await page.getByRole('link', { name: 'Login' }).click();
+  await page.getByRole('textbox', { name: 'Email' }).click();
+  await page.getByRole('textbox', { name: 'Email' }).fill('amnaf3479@gmail.com');
+  await page.getByRole('textbox', { name: '********' }).click();
+  await page.getByRole('textbox', { name: '********' }).fill('789456');
+  await page.getByRole('button', { name: 'Login' }).click();
+  await page.getByRole('button', { name: 'Login' }).nth(1).click();
+  await page.getByRole('button', { name: 'Manage Property' }).first().click();
+  await page.getByRole('heading', { name: 'Configuration' }).click();
+  await page.getByRole('link', { name: 'Room Price' }).click();
+  await page.getByRole('button', { name: 'Add New' }).click();
+  await page.getByRole('textbox', { name: 'e.g., Summer Season' }).click();
+  await page.getByRole('textbox', { name: 'e.g., Summer Season' }).fill('test price 1');
+  await page.getByRole('button', { name: '/13/2027' }).click();
+await page.getByRole('button', { name: 'Go to previous month' }).first().click();
+await page.getByRole('button', { name: 'Go to previous month' }).first().click();
+await page.getByRole('button', { name: 'Go to previous month' }).first().click();
+await page.getByRole('button', { name: 'Go to previous month' }).first().click();
+await page.getByRole('button', { name: 'Go to previous month' }).first().click();
+await page.getByRole('button', { name: 'Go to previous month' }).first().click();
+await page.getByRole('button', { name: 'Go to previous month' }).first().click();
+await page.getByRole('button', { name: 'Go to previous month' }).first().click();
+await page.getByRole('button', { name: 'Go to previous month' }).first().click();
+await page.getByRole('button', { name: 'Go to previous month' }).first().click();
+await page.getByRole('button', { name: 'Go to previous month' }).first().click();
+await page.getByRole('button', { name: 'Go to previous month' }).first().click();
+  await page.getByRole('gridcell', { name: '1' }).nth(1).click();
+  await page.getByRole('button', { name: 'Select end date' }).click();
+await page.getByRole('button', { name: 'Go to next month' }).nth(1).click();
+  await page.getByRole('gridcell', { name: '31' }).click();
+    await page.getByText('Schedule Name *Start Date *4/').click();
+  await page.getByRole('button', { name: 'Load Previous Price Schedule' }).click();
+  await page.getByRole('row', { name: '91 April–May Seasonal Rates' }).getByRole('button').click();
+  await page.getByPlaceholder('0.00').first().click();
+  await page.getByPlaceholder('0.00').first().press('ArrowLeft');
+  await page.getByPlaceholder('0.00').first().fill('50');
+  await page.getByPlaceholder('0.00').first().press('ArrowRight');
+  await page.getByPlaceholder('0.00').first().fill('5');
+  await page.getByPlaceholder('0.00').nth(1).click();
+  await page.getByPlaceholder('0.00').nth(1).press('ArrowLeft');
+  await page.getByPlaceholder('0.00').nth(1).fill('50');
+  await page.getByPlaceholder('0.00').nth(1).press('ArrowRight');
+  await page.getByPlaceholder('0.00').nth(1).fill('5');
+await page.getByRole('button', { name: 'Submit' }).click();
+
+await page.waitForLoadState('networkidle');
+
+await page.getByRole('button', { name: 'Save Schedule' }).click();
+});
