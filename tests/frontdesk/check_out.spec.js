@@ -1,0 +1,34 @@
+    import { test, expect } from '@playwright/test';
+
+    test('test', async ({ page }) => {
+    await page.goto('https://v2d.ceyinfo.com/');
+    await page.getByRole('link', { name: 'Login' }).click();
+    await page.getByRole('textbox', { name: 'Email' }).click();
+    await page.getByRole('textbox', { name: 'Email' }).fill('slakmaligunasingha@gmail.com');
+    await page.getByRole('textbox', { name: '********' }).click();
+    await page.getByRole('textbox', { name: '********' }).fill('123456');
+    await page.getByRole('button', { name: 'Login' }).click();
+    await page.getByRole('button', { name: 'Login' }).nth(1).click();
+    await page.getByRole('button', { name: 'Manage Property' }).first().click();
+    await page.getByRole('heading', { name: 'Front Desk' }).click();
+    await page.getByRole('button', { name: 'Checkouts' }).click();
+    await page.getByRole('button', { name: 'Check Out' }).click();
+    const page1Promise = page.waitForEvent('popup');
+    await page.getByRole('button', { name: 'View Folio' }).click();
+    const page1 = await page1Promise;
+    await page1.getByRole('button', { name: 'Invoice' }).click();
+    await page1.getByRole('button', { name: 'Save Invoice' }).click();
+    await page1.getByRole('button', { name: 'Record Payment' }).click();
+    await page1.getByRole('combobox').filter({ hasText: 'Select a payment method' }).click();
+    await page1.getByLabel('Cash').getByText('Cash').click();
+    await page1.getByRole('textbox', { name: '0.00' }).click();
+    await page1.getByRole('textbox', { name: '0.00' }).fill('23410');
+    await page1.getByRole('button', { name: 'Pay', exact: true }).click();
+    await page1.getByRole('button').nth(3).click();
+    const page2Promise = page1.waitForEvent('popup');
+    await page1.getByRole('link', { name: 'Front Desk' }).click();
+    const page2 = await page2Promise;
+    await page2.getByRole('button', { name: 'Checkouts' }).click();
+    await page2.getByRole('button', { name: 'Check Out' }).click();
+    await page2.getByRole('button', { name: 'Save Check-out Time' }).click();
+    });
