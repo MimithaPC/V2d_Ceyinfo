@@ -1,0 +1,24 @@
+    import { test, expect } from '@playwright/test';
+
+    test('test', async ({ page }) => {
+    await page.goto('https://v2d.ceyinfo.com/');
+    await page.getByRole('link', { name: 'Login' }).click();
+    await page.getByRole('textbox', { name: 'Email' }).click();
+    await page.getByRole('textbox', { name: 'Email' }).fill('slakmaligunasingha@gmail.com');
+    await page.getByRole('textbox', { name: '********' }).click();
+    await page.getByRole('textbox', { name: '********' }).fill('123456');
+    await page.getByRole('button', { name: 'Login' }).click();
+    await page.getByRole('button', { name: 'Login' }).nth(1).click();
+    await page.getByRole('button', { name: 'Manage Property' }).first().click();
+    await page.getByRole('heading', { name: 'Front Desk' }).click();
+    await page.getByRole('button', { name: 'Inquiries' }).click();
+    //   await page.getByRole('button', { name: 'View' }).first().click();
+    await page.waitForTimeout(3000);
+    await page.getByRole('button', { name: 'Advance Payment' }).click();
+    await page.getByRole('combobox').click();
+    await page.getByRole('option', { name: 'Cash' }).click();
+    await page.getByPlaceholder('Enter amount').click();
+    await page.getByPlaceholder('Enter amount').fill('1000');
+    await page.getByRole('button', { name: 'Add' }).click();
+    await page.getByRole('button', { name: 'Save' }).click();
+    });

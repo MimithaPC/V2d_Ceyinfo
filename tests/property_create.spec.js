@@ -13,7 +13,7 @@ test('test', async ({ page }) => {
   await page.getByRole('button', { name: '+ Add Property' }).click();
   await page.getByRole('textbox', { name: 'Property Name *' }).fill('abc');
   await page.getByRole('textbox', { name: 'Email *' }).click();
-  await page.getByRole('textbox', { name: 'Email *' }).fill('mimithaprabodani@gmail.com');
+  await page.getByRole('textbox', { name: 'Email *' }).fill('mimitha@gmail.com');
   await page.getByRole('textbox', { name: 'Mobile *' }).click();
   await page.getByRole('textbox', { name: 'Mobile *' }).fill('0764912257');
   await page.getByRole('button', { name: 'Save' }).click();
