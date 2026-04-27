@@ -1,0 +1,32 @@
+import { test, expect } from '@playwright/test';
+
+test('test', async ({ page }) => {
+  await page.goto('https://v2d.ceyinfo.com/');
+  await page.getByRole('link', { name: 'Login' }).click();
+  await page.getByRole('textbox', { name: 'Email' }).click();
+  await page.getByRole('textbox', { name: 'Email' }).fill('mimithaprabodani@gmail.com');
+  await page.getByRole('textbox', { name: '********' }).click();
+  await page.getByRole('textbox', { name: '********' }).fill('Mi@123');
+  await page.getByRole('button', { name: 'Login' }).click();
+  await page.locator('div:nth-child(8) > .inline-flex').click();
+  await page.getByRole('button', { name: 'Manage Property' }).first().click();
+  await page.locator('div').filter({ hasText: /^Manage →$/ }).first().click();
+  await page.getByRole('button', { name: 'Extras' }).click();
+  await page.getByRole('button', { name: 'Guest Services' }).click();
+  await page.getByRole('button', { name: 'Add Service' }).click();
+  await page.getByRole('textbox', { name: 'Service Name *' }).click();
+  await page.getByRole('textbox', { name: 'Service Name *' }).press('CapsLock');
+  await page.getByRole('textbox', { name: 'Service Name *' }).fill('C');
+  await page.getByRole('textbox', { name: 'Service Name *' }).press('CapsLock');
+  await page.getByRole('textbox', { name: 'Service Name *' }).fill('Candlelight dinner ');
+//   await page.getByRole('textbox', { name: 'Service Name *' }).press('CapsLock');
+//   await page.getByRole('textbox', { name: 'Service Name *' }).fill('Extra B');
+//   await page.getByRole('textbox', { name: 'Service Name *' }).press('CapsLock');
+//   await page.getByRole('textbox', { name: 'Service Name *' }).fill('Extra Bed');
+  await page.getByRole('textbox', { name: 'Description' }).click();
+  await page.getByRole('textbox', { name: 'Description' }).press('CapsLock');
+  await page.getByRole('textbox', { name: 'Description' }).fill('C');
+  await page.getByRole('textbox', { name: 'Description' }).press('CapsLock');
+  await page.getByRole('textbox', { name: 'Description' }).fill('Candlelight dinner description');
+  await page.getByRole('button', { name: 'Save Service' }).click();
+});
