@@ -1,0 +1,30 @@
+import { test, expect } from '@playwright/test';
+
+test('test', async ({ page }) => {
+  await page.goto('https://v2d.ceyinfo.com/');
+  await page.getByRole('link', { name: 'Login' }).click();
+  await page.getByRole('textbox', { name: 'Email' }).click();
+  await page.getByRole('textbox', { name: 'Email' }).fill('amnaf3479@gmail.com');
+  await page.getByRole('textbox', { name: '********' }).click();
+  await page.getByRole('textbox', { name: '********' }).fill('789456');
+  await page.getByRole('button', { name: 'Login' }).click();
+  await page.getByRole('button', { name: 'Login' }).nth(1).click();
+  await page.getByRole('button', { name: 'Manage Property' }).first().click();
+  await page.getByRole('heading', { name: 'Configuration' }).click();
+  await page.getByRole('button', { name: 'F&B Operations' }).click();
+  await page.getByRole('link', { name: 'POS & Meal Location Mapping' }).click();
+  await page.getByRole('button', { name: 'Add New Mapping' }).click();
+  await page.getByRole('combobox').click();
+  await page.getByLabel('test location').getByText('test location').click();
+  await page.getByRole('button', { name: '✓ test location' }).click();
+  await page.getByRole('button', { name: '✓ Grill Station' }).click();
+  await page.getByRole('button', { name: '✓ Cafe Kitchen' }).click();
+  await page.getByRole('button', { name: '✓ Cold Kitchen' }).click();
+  await page.getByRole('button', { name: '✓ Hot Kitchen' }).click();
+  await page.getByText('✓test location 1✓Grill').click();
+  await page.getByRole('button', { name: '✓ Coffee Station' }).click();
+  await page.getByRole('button', { name: '✓ Bar Kitchen' }).click();
+  await page.getByRole('button', { name: '✓ Main Kitchen' }).click();
+  await page.getByRole('button', { name: '✓ Banquet Kitchen' }).click();
+  await page.getByRole('button', { name: 'Save Mapping' }).click();
+});
