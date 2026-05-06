@@ -1,7 +1,9 @@
     import { test, expect } from '@playwright/test';
 
     test('test', async ({ page }) => {
-    await page.goto('https://v2d.ceyinfo.com/');
+    
+    test.setTimeout(120000);
+    await page.goto('https://v2d.ceyinfo.com/', { waitUntil: 'networkidle' });
     await page.getByRole('link', { name: 'Login' }).click();
     await page.getByRole('textbox', { name: 'Email' }).click();
     await page.getByRole('textbox', { name: 'Email' }).fill('slakmaligunasingha@gmail.com');

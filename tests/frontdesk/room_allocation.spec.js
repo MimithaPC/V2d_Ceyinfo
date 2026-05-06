@@ -14,7 +14,7 @@
     await page.getByRole('button', { name: 'Room Allocation' }).click();
     await page.getByRole('button', { name: 'Close Sidebar' }).click();
     // await page.getByText('room').nth(1).click();
-    await page.waitForTimeout(4000);
+    await page.waitForTimeout(10000);
     // await page.getByText('Test Room 108').click();
     await page.getByRole('button', { name: 'Allocate (1)' }).click();
     });

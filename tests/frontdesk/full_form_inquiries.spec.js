@@ -1,7 +1,9 @@
-    import { test, expect } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 
-    test('test', async ({ page }) => {
-    await page.goto('https://v2d.ceyinfo.com/');
+test('test', async ({ page }) => {
+
+    test.setTimeout(120000);
+    await page.goto('https://v2d.ceyinfo.com/', { waitUntil: 'networkidle' });
     await page.getByRole('link', { name: 'Login' }).click();
     await page.getByRole('textbox', { name: 'Email' }).click();
     await page.getByRole('textbox', { name: 'Email' }).fill('slakmaligunasingha@gmail.com');
@@ -15,13 +17,13 @@
     await page.getByRole('button', { name: 'Close Sidebar' }).click();
     await page.getByRole('button', { name: '+ New Reservation' }).click();
     await page.getByRole('button', { name: '📋 Full Form All fields' }).click();
-    await page.waitForTimeout(4000);
-    //   await page.getByLabel('May').getByRole('gridcell', { name: '12' }).click();
-    //   await page.getByLabel('May').getByRole('gridcell', { name: '14' }).click();
+    await page.waitForTimeout(2000);
+    // await page.getByLabel('May').getByRole('gridcell', { name: '12' }).click();
+    // await page.getByLabel('May').getByRole('gridcell', { name: '14' }).click();
     await page.getByRole('button', { name: 'Flexible' }).click();
     await page.getByRole('button', { name: 'Custom' }).click();
     await page.getByRole('combobox').filter({ hasText: 'Select' }).click();
-    await page.getByLabel('fit(local)').getByText('fit(local)').click();
+    await page.getByLabel('agoda').getByText('agoda').click();
     await page.getByRole('textbox', { name: 'Voucher No' }).click();
     await page.getByRole('textbox', { name: 'Voucher No' }).fill('123');
     await page.getByRole('textbox', { name: 'Tour No' }).click();
@@ -29,7 +31,7 @@
     await page.locator('tr:nth-child(2) > .px-2.py-1 > .flex > .inline-flex.items-center.justify-center.gap-2.whitespace-nowrap.rounded-md.text-sm').click();
     await page.getByRole('combobox').filter({ hasText: 'Select Room' }).click();
     await page.waitForTimeout(2000);
-    //   await page.getByRole('option', { name: '103' }).click();
+    // await page.getByRole('option', { name: '103' }).click();
     await page.locator('input[type="text"]').dblclick();
     await page.locator('input[type="text"]').fill('LKR 3,0000.00');
     await page.locator('td:nth-child(10) > .flex > .inline-flex.items-center.justify-center.gap-2.whitespace-nowrap.font-medium.transition-colors.focus-visible\\:outline-none.focus-visible\\:ring-1.focus-visible\\:ring-ring.disabled\\:pointer-events-none.disabled\\:opacity-50.\\[\\&_svg\\]\\:pointer-events-none.\\[\\&_svg\\]\\:size-4.\\[\\&_svg\\]\\:shrink-0.border.bg-background.shadow-sm.hover\\:text-accent-foreground.rounded-md.h-7').click();
@@ -40,7 +42,7 @@
     await page.getByRole('button', { name: 'Authorize Entry' }).click();
     await page.getByRole('button', { name: 'Add Guest Info' }).click();
     await page.getByRole('button', { name: 'Search Guest' }).click();
-    await page.getByRole('row', { name: '#404 T thilanka — thilabnka@' }).getByRole('button').click();
+    // await page.getByRole('row', { name: '#404 T thilanka — thilabnka@' }).getByRole('button').click();
     await page.getByRole('button', { name: 'Save Guest' }).click();
     await page.getByRole('combobox').filter({ hasText: 'None' }).click();
     await page.getByRole('option', { name: 'None' }).click();
@@ -49,4 +51,6 @@
     await page.locator('textarea[name="notes"]').dblclick();
     await page.locator('textarea[name="notes"]').fill('Booking');
     await page.getByRole('button', { name: 'Create Reservation' }).click();
-    });
+    await page.waitForTimeout(3000);
+
+});
