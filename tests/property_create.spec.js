@@ -9,7 +9,7 @@ test('test', async ({ page }) => {
     await page.getByRole('textbox', { name: '********' }).click();
     await page.getByRole('textbox', { name: '********' }).fill('Mi@123');
     await page.getByRole('button', { name: 'Login' }).click();
-    await page.locator('div:nth-child(10) > .inline-flex').click(); //Change
+    await page.locator('div:nth-child(12) > .inline-flex').click(); //Change
     await page.getByRole('link', { name: 'Properties' }).click();
     await page.getByRole('button', { name: '+ Add Property' }).click();
     await page.getByRole('textbox', { name: 'Property Name *' }).fill('Kandy Hotel'); //Change

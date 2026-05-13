@@ -8,9 +8,10 @@
     await page.getByRole('textbox', { name: '********' }).click();
     await page.getByRole('textbox', { name: '********' }).fill('123456');
     await page.getByRole('button', { name: 'Login' }).click();
-    await page.getByRole('button', { name: 'Login' }).nth(1).click();
+    await page.getByRole('button', { name: 'Login' }).nth(1).click(); //Change
+    // await page.getByRole('button', { name: 'Manage Property' }).nth(2).click(); //Change
     await page.getByRole('button', { name: 'Manage Property' }).first().click();
-    await page.locator('div').filter({ hasText: /^Manage →$/ }).first().click();
+    await page.getByRole('button', { name: 'Front Desk Reservations,' }).click();
     await page.getByRole('button', { name: 'Room Allocation' }).click();
     await page.getByRole('button', { name: 'Close Sidebar' }).click();
     // await page.getByText('room').nth(1).click();

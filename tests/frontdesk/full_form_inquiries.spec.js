@@ -12,15 +12,15 @@ test('test', async ({ page }) => {
     await page.getByRole('button', { name: 'Login' }).click();
     await page.getByRole('button', { name: 'Login' }).nth(1).click();
     await page.getByRole('button', { name: 'Manage Property' }).first().click();
-    await page.getByRole('heading', { name: 'Front Desk' }).click();
+    await page.getByRole('button', { name: 'Front Desk Reservations,' }).click();
     await page.getByRole('button', { name: 'Inquiries' }).click();
     await page.getByRole('button', { name: 'Close Sidebar' }).click();
     await page.getByRole('button', { name: '+ New Reservation' }).click();
     await page.getByRole('button', { name: '📋 Full Form All fields' }).click();
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(4000);
     // await page.getByLabel('May').getByRole('gridcell', { name: '12' }).click();
     // await page.getByLabel('May').getByRole('gridcell', { name: '14' }).click();
-    await page.getByRole('button', { name: 'Flexible' }).click();
+    // await page.getByRole('button', { name: 'Flexible' }).click();
     await page.getByRole('button', { name: 'Custom' }).click();
     await page.getByRole('combobox').filter({ hasText: 'Select' }).click();
     await page.getByLabel('agoda').getByText('agoda').click();
@@ -28,7 +28,8 @@ test('test', async ({ page }) => {
     await page.getByRole('textbox', { name: 'Voucher No' }).fill('123');
     await page.getByRole('textbox', { name: 'Tour No' }).click();
     await page.getByRole('textbox', { name: 'Tour No' }).fill('456');
-    await page.locator('tr:nth-child(2) > .px-2.py-1 > .flex > .inline-flex.items-center.justify-center.gap-2.whitespace-nowrap.rounded-md.text-sm').click();
+    await page.waitForTimeout(5000);
+    // await page.locator('tr:nth-child(2) > .px-2.py-1 > .flex > .inline-flex.items-center.justify-center.gap-2.whitespace-nowrap.rounded-md.text-sm').click();
     await page.getByRole('combobox').filter({ hasText: 'Select Room' }).click();
     await page.waitForTimeout(2000);
     // await page.getByRole('option', { name: '103' }).click();

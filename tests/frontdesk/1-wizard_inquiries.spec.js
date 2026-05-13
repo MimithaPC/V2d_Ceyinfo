@@ -10,9 +10,10 @@ test('test', async ({ page }) => {
     await page.getByRole('textbox', { name: '********' }).click();
     await page.getByRole('textbox', { name: '********' }).fill('123456');
     await page.getByRole('button', { name: 'Login' }).click();
-    await page.getByRole('button', { name: 'Login' }).nth(1).click();
+    await page.getByRole('button', { name: 'Login' }).nth(1).click(); //Change
+    // await page.getByRole('button', { name: 'Manage Property' }).nth(2).click(); //Change
     await page.getByRole('button', { name: 'Manage Property' }).first().click();
-    await page.getByRole('heading', { name: 'Front Desk' }).click();
+    await page.getByRole('button', { name: 'Front Desk Reservations,' }).click();
     await page.getByRole('button', { name: 'Inquiries' }).click();
     await page.getByRole('button', { name: 'Close Sidebar' }).click();
     await page.getByRole('button', { name: '+ New Reservation' }).click();
@@ -20,14 +21,14 @@ test('test', async ({ page }) => {
     // await page.waitForTimeout(4000);
     // await page.getByLabel('May').getByRole('gridcell', { name: '12' }).click();
     // await page.getByLabel('May').getByRole('gridcell', { name: '14' }).click();
-    await page.getByRole('button', { name: 'Flexible' }).click();
+    // await page.getByRole('button', { name: 'Flexible' }).click();
     await page.getByRole('button', { name: 'Custom' }).click();
     await page.getByRole('option', { name: 'agoda' }).click();
     await page.getByRole('textbox', { name: 'Voucher No' }).click();
     await page.getByRole('textbox', { name: 'Voucher No' }).fill('123');
     await page.getByRole('textbox', { name: 'Tour No' }).click();
     await page.getByRole('textbox', { name: 'Tour No' }).fill('456');
-    await page.getByRole('button', { name: 'Room Selection' }).click();
+    await page.getByRole('button', { name: 'Booking Source' }).click();
     await page.locator('.inline-flex.items-center.justify-center.gap-2.whitespace-nowrap.rounded-md.text-sm.font-medium.transition-colors.focus-visible\\:outline-none.focus-visible\\:ring-1.focus-visible\\:ring-ring.disabled\\:pointer-events-none.disabled\\:opacity-50.\\[\\&_svg\\]\\:pointer-events-none.\\[\\&_svg\\]\\:size-4.\\[\\&_svg\\]\\:shrink-0.border').click();
     await page.getByRole('row', { name: 'Triple Price Missing 1 LKR 0.' }).locator('input[type="text"]').dblclick();
     await page.getByRole('row', { name: 'Triple Price Missing 1 LKR 0.' }).locator('input[type="text"]').fill('LKR 3,0000.00');
