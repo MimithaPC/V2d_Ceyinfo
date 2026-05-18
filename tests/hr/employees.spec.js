@@ -136,5 +136,4 @@ test('test', async ({ page }) => {
     await page.getByRole('button', { name: 'Save Employee' }).click();
     await page.waitForTimeout(2000);
 
-
 });
