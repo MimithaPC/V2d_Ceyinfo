@@ -21,7 +21,7 @@ test('test', async ({ page }) => {
     await page.getByRole('button', { name: '+ Add Users' }).click();
     await page.getByText('User Name *LakmaliJananiMaleenaDehemi').click();
     await page.getByLabel('Dehemi').getByText('Dehemi').click();
-    await page.getByText('General Manager').click();
+    await page.getByText('root-user').click();
     await page.getByRole('button', { name: 'Save' }).click();
     await page.waitForTimeout(5000);
 
@@ -30,7 +30,7 @@ test('test', async ({ page }) => {
     await page.getByRole('button', { name: '+ Add Users' }).click();
     await page.getByText('User Name *LakmaliJananiMaleena').click();
     await page.getByLabel('Janani').getByText('Janani').click();
-    await page.getByText('General Manager').click();
+    await page.getByText('root-user').click();
     await page.getByRole('button', { name: 'Save' }).click();
     await page.waitForTimeout(5000);
 
@@ -39,7 +39,7 @@ test('test', async ({ page }) => {
     await page.getByRole('button', { name: '+ Add Users' }).click();
     await page.getByText('User Name *LakmaliMaleena').click();
     await page.getByLabel('Maleena').getByText('Maleena').click();
-    await page.getByText('General Manager').click();
+    await page.getByText('root-user').click();
     await page.getByRole('button', { name: 'Save' }).click();
     await page.waitForTimeout(5000);
 
@@ -48,7 +48,7 @@ test('test', async ({ page }) => {
     await page.getByRole('button', { name: '+ Add Users' }).click();
     await page.getByText('User Name *Lakmali').click();
     await page.getByLabel('Lakmali').getByText('Lakmali').click();
-    await page.getByText('General Manager').click();
+    await page.getByText('root-user').click();
     await page.getByRole('button', { name: 'Save' }).click();
     await page.waitForTimeout(5000);
 
