@@ -9,9 +9,9 @@ test('test', async ({ page }) => {
     await page.goto('https://v2d.ceyinfo.com/', { waitUntil: 'networkidle' });
     await page.getByRole('link', { name: 'Login' }).click();
     await page.getByRole('textbox', { name: 'Email' }).click();
-    await page.getByRole('textbox', { name: 'Email' }).fill('mimithaprabodani@gmail.com');
+    await page.getByRole('textbox', { name: 'Email' }).fill('slakmaligunasingha@gmail.com');
     await page.getByRole('textbox', { name: '********' }).click();
-    await page.getByRole('textbox', { name: '********' }).fill('Mi@123');
+    await page.getByRole('textbox', { name: '********' }).fill('123456');
     await page.getByRole('button', { name: 'Login' }).click();
     await page.waitForTimeout(2000);
     // await page.locator('div:nth-child(14) > .inline-flex').click();

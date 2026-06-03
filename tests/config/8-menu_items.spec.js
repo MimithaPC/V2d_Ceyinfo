@@ -127,7 +127,7 @@ test('test', async ({ page }) => {
     await page.getByRole('combobox').filter({ hasText: /^$/ }).click();
     await page.getByLabel('Green Tea').getByText('Green Tea').click();
     await page.getByRole('textbox', { name: 'Enter description' }).click();
-    await page.getByRole('textbox', { name: 'Enter description' }).fill('wt54yt4yh4');
+    await page.getByRole('textbox', { name: 'Enter description' }).fill('Refreshing green tea served chilled with ice');
     await page.getByRole('button', { name: 'Add Menu Item' }).click();
     await page.waitForTimeout(4000);
 

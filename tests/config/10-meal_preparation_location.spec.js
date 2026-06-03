@@ -19,7 +19,48 @@ test('test', async ({ page }) => {
     // await page.waitForTimeout(2000);
     await page.getByRole('button', { name: 'Manage Property' }).first().click();
     await page.getByRole('button', { name: 'Configuration System settings' }).click();
-    
+    await page.getByRole('button', { name: 'F&B Operations' }).click();
+    await page.getByRole('link', { name: 'Meal Preparation Location', exact: true }).click();
+    await page.getByRole('button', { name: 'Close Sidebar' }).click();
+
+    // ----- Add first meal preparation location -----
+
+    await page.getByRole('button', { name: 'Add New' }).click();
+    await page.getByRole('textbox', { name: 'Enter location name' }).click();
+    await page.getByRole('textbox', { name: 'Enter location name' }).fill('Main Kitchen');
+    await page.getByRole('textbox', { name: 'Enter description' }).click();
+    await page.getByRole('textbox', { name: 'Enter description' }).fill('Main area where restaurant meals are prepared.');
+    await page.getByRole('button', { name: 'Save Location' }).click();
+    await page.waitForTimeout(2000); 
+
+    // ----- Add second meal preparation location -----
+
+    await page.getByRole('button', { name: 'Add New' }).click();
+    await page.getByRole('textbox', { name: 'Enter location name' }).click();
+    await page.getByRole('textbox', { name: 'Enter location name' }).fill('Bar Preparation Area');
+    await page.getByRole('textbox', { name: 'Enter description' }).click();
+    await page.getByRole('textbox', { name: 'Enter description' }).fill('Area where drinks and beverages are prepared.');
+    await page.getByRole('button', { name: 'Save Location' }).click();
+    await page.waitForTimeout(2000); 
+
+    // ----- Add third meal preparation location -----
+
+    await page.getByRole('button', { name: 'Add New' }).click();
+    await page.getByRole('textbox', { name: 'Enter location name' }).click();
+    await page.getByRole('textbox', { name: 'Enter location name' }).fill('Café Kitchen');
+    await page.getByRole('textbox', { name: 'Enter description' }).click();
+    await page.getByRole('textbox', { name: 'Enter description' }).fill('Kitchen for preparing café food and snacks.');
+    await page.getByRole('button', { name: 'Save Location' }).click();
+    await page.waitForTimeout(2000); 
+
+    // ----- Add fourth meal preparation location -----
+
+    await page.getByRole('button', { name: 'Add New' }).click();
+    await page.getByRole('textbox', { name: 'Enter location name' }).click();
+    await page.getByRole('textbox', { name: 'Enter location name' }).fill('Poolside Kitchen');
+    await page.getByRole('textbox', { name: 'Enter description' }).click();
+    await page.getByRole('textbox', { name: 'Enter description' }).fill('Kitchen that prepares food and drinks for poolside guests.');
+    await page.getByRole('button', { name: 'Save Location' }).click();
     await page.waitForTimeout(4000);
 
 });
