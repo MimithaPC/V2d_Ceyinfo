@@ -16,10 +16,10 @@ test('test', async ({ page }) => {
     await page.waitForTimeout(2000);
     // await page.locator('div:nth-child(14) > .inline-flex').click();
     // await page.getByRole('button', { name: 'Manage Property' }).nth(2).click();
-    // await page.waitForTimeout(2000);
-    await page.getByRole('button', { name: 'Manage Property' }).first().click();
+    await page.waitForTimeout(2000);
+    // await page.getByRole('button', { name: 'Manage Property' }).first().click();
     await page.getByRole('button', { name: 'Configuration System settings' }).click();
-    await page.getByRole('link', { name: 'Room view,type,category' }).click();
+    await page.getByRole('link', { name: 'Room view / Type / Category' }).click();
 
     // ----- Set not applicable -----
 

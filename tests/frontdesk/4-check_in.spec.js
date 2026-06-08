@@ -1,8 +1,9 @@
-    import { test, expect } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 
-    test('test', async ({ page }) => {
-    
+test('test', async ({ page }) => {
+
     test.setTimeout(120000);
+
     await page.goto('https://v2d.ceyinfo.com/', { waitUntil: 'networkidle' });
     await page.getByRole('link', { name: 'Login' }).click();
     await page.getByRole('textbox', { name: 'Email' }).click();
@@ -10,9 +11,11 @@
     await page.getByRole('textbox', { name: '********' }).click();
     await page.getByRole('textbox', { name: '********' }).fill('123456');
     await page.getByRole('button', { name: 'Login' }).click();
-    await page.getByRole('button', { name: 'Login' }).nth(1).click(); //Change
-    // await page.getByRole('button', { name: 'Manage Property' }).nth(2).click(); //Change
-    await page.getByRole('button', { name: 'Manage Property' }).first().click();
+    await page.waitForTimeout(2000);
+    // await page.locator('div:nth-child(14) > .inline-flex').click();
+    // await page.getByRole('button', { name: 'Manage Property' }).nth(2).click();
+    await page.waitForTimeout(2000);
+    // await page.getByRole('button', { name: 'Manage Property' }).first().click();
     await page.getByRole('button', { name: 'Front Desk Reservations,' }).click();
     await page.getByRole('button', { name: 'Check-Ins', exact: true }).click();
     await page.getByRole('button', { name: 'Close Sidebar' }).click();
@@ -23,4 +26,6 @@
     // await page.locator('body').setInputFiles('download (1).jpeg');
     await page.getByRole('button', { name: 'Save Registration' }).click();
     await page.getByRole('button', { name: 'Save Check-In Time' }).click();
-    });
+    await page.waitForTimeout(4000);
+
+});

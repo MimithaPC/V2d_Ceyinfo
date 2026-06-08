@@ -3,6 +3,7 @@ import { test, expect } from '@playwright/test';
 test('test', async ({ page }) => {
 
     test.setTimeout(120000);
+
     await page.goto('https://v2d.ceyinfo.com/', { waitUntil: 'networkidle' });
     await page.getByRole('link', { name: 'Login' }).click();
     await page.getByRole('textbox', { name: 'Email' }).click();
@@ -10,8 +11,11 @@ test('test', async ({ page }) => {
     await page.getByRole('textbox', { name: '********' }).click();
     await page.getByRole('textbox', { name: '********' }).fill('123456');
     await page.getByRole('button', { name: 'Login' }).click();
-    await page.getByRole('button', { name: 'Login' }).nth(1).click();
-    await page.getByRole('button', { name: 'Manage Property' }).first().click();
+    await page.waitForTimeout(2000);
+    // await page.locator('div:nth-child(14) > .inline-flex').click();
+    // await page.getByRole('button', { name: 'Manage Property' }).nth(2).click();
+    await page.waitForTimeout(2000);
+    // await page.getByRole('button', { name: 'Manage Property' }).first().click();
     await page.getByRole('button', { name: 'Front Desk Reservations,' }).click();
     await page.getByRole('button', { name: 'Inquiries' }).click();
     await page.getByRole('button', { name: 'Close Sidebar' }).click();
@@ -22,8 +26,7 @@ test('test', async ({ page }) => {
     // await page.getByLabel('May').getByRole('gridcell', { name: '14' }).click();
     // await page.getByRole('button', { name: 'Flexible' }).click();
     await page.getByRole('button', { name: 'Custom' }).click();
-    await page.getByRole('combobox').filter({ hasText: 'Select' }).click();
-    await page.getByLabel('agoda').getByText('agoda').click();
+    await page.getByLabel('booking.com').getByText('booking.com').click();
     await page.getByRole('textbox', { name: 'Voucher No' }).click();
     await page.getByRole('textbox', { name: 'Voucher No' }).fill('123');
     await page.getByRole('textbox', { name: 'Tour No' }).click();
@@ -52,6 +55,6 @@ test('test', async ({ page }) => {
     await page.locator('textarea[name="notes"]').dblclick();
     await page.locator('textarea[name="notes"]').fill('Booking');
     await page.getByRole('button', { name: 'Create Reservation' }).click();
-    await page.waitForTimeout(3000);
+    await page.waitForTimeout(4000);
 
 });

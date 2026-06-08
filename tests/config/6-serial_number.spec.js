@@ -14,9 +14,10 @@ test('test', async ({ page }) => {
     await page.getByRole('textbox', { name: '********' }).fill('Mi@123');
     await page.getByRole('button', { name: 'Login' }).click();
     await page.waitForTimeout(2000);
-    // await page.locator('div:nth-child(12) > .inline-flex').click(); //Change
+    // await page.locator('div:nth-child(14) > .inline-flex').click();
     // await page.getByRole('button', { name: 'Manage Property' }).nth(2).click();
-    await page.getByRole('button', { name: 'Manage Property' }).first().click();
+    await page.waitForTimeout(2000);
+    // await page.getByRole('button', { name: 'Manage Property' }).first().click();
     await page.getByRole('button', { name: 'Configuration System settings' }).click();
     await page.getByRole('button', { name: 'Extra' }).click();
     await page.getByRole('link', { name: 'Serial Number' }).click();

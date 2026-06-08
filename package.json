@@ -2,13 +2,37 @@
   "name": "playwright-test",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  
+    "scripts": {
+
+        "property": "playwright test tests/property_create.spec.js --headed --workers=1 --project=chromium",
+        "employees": "playwright test tests/hr/employees.spec.js --headed --workers=1 --project=chromium",
+        "users": "playwright test tests/user management/user.spec.js --headed --workers=1 --project=chromium",
+        
+        "propertysetup": "npm run property && npm run employees && npm run users",
+
+        "roomviews": "playwright test tests/config/1-room_view.spec.js --headed --workers=1 --project=chromium",
+        "roomclass": "playwright test tests/config/2-room_price_class.spec.js --headed --workers=1 --project=chromium",
+        "rooms": "playwright test tests/config/3-building_rooms.spec.js --headed --workers=1 --project=chromium",
+        "roomprice": "playwright test tests/config/4-room_price.spec.js --headed --workers=1 --project=chromium",
+        "offers": "playwright test tests/config/5-offers.spec.js --headed --workers=1 --project=chromium",
+        "serial": "playwright test tests/config/6-serial_number.spec.js --headed --workers=1 --project=chromium",
+        "guestservices": "playwright test tests/frontdesk/6-guest_service.spec.js --headed --workers=1 --project=chromium",
+        "travelagencies": "playwright test tests/frontdesk/7-travel_agency.spec.js --headed --workers=1 --project=chromium",
+
+        "reservationsetup": "npm run roomviews && npm run roomclass && npm run rooms && npm run roomprice && npm run offers && npm run serial && npm run guestservices && npm run travelagencies"
+
+    },
+    
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
+
   "devDependencies": {
+
     "@playwright/test": "^1.59.1",
     "@types/node": "^25.6.0"
+    
   }
 }
