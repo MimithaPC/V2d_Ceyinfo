@@ -20,7 +20,15 @@
         "guestservices": "playwright test tests/frontdesk/6-guest_service.spec.js --headed --workers=1 --project=chromium",
         "travelagencies": "playwright test tests/frontdesk/7-travel_agency.spec.js --headed --workers=1 --project=chromium",
 
-        "reservationsetup": "npm run roomviews && npm run roomclass && npm run rooms && npm run roomprice && npm run offers && npm run serial && npm run guestservices && npm run travelagencies"
+        "reservationsetup": "npm run roomviews && npm run roomclass && npm run rooms && npm run roomprice && npm run offers && npm run serial && npm run guestservices && npm run travelagencies",
+
+        "inquiries": "playwright test tests/frontdesk/1-full_form_inquiries.spec.js --headed --workers=1 --project=chromium",
+        "advanced": "playwright test tests/frontdesk/2-advanced_payment.spec.js --headed --workers=1 --project=chromium",
+        "roomallocation": "playwright test tests/frontdesk/3-room_allocation.spec.js --headed --workers=1 --project=chromium",
+        "checkin": "playwright test tests/frontdesk/4-check_in.spec.js --headed --workers=1 --project=chromium",
+        "checkout": "playwright test tests/frontdesk/5-check_out.spec.js --headed --workers=1 --project=chromium",
+
+        "insertreservation": "npm run inquiries && npm run advanced && npm run roomallocation && npm run checkin && npm run checkout"
 
     },
     
