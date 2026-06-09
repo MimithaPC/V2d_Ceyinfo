@@ -18,9 +18,9 @@ test('test', async ({ page }) => {
     await page.getByRole('link', { name: 'Add New Property' }).click();
     await page.getByRole('button', { name: 'Add Property' }).click();
     await page.getByRole('textbox', { name: 'Enter property name' }).click();
-    await page.getByRole('textbox', { name: 'Enter property name' }).fill('Ocean Hotel Trincomalee'); //Change
+    await page.getByRole('textbox', { name: 'Enter property name' }).fill('Silver Crest Hotel Colombo'); //Change
     await page.getByRole('textbox', { name: 'Enter email address' }).click();
-    await page.getByRole('textbox', { name: 'Enter email address' }).fill('oceantrinco@gmail.com'); //Change
+    await page.getByRole('textbox', { name: 'Enter email address' }).fill('silvercrestcolombo@gmail.com'); //Change
     await page.getByRole('textbox', { name: 'Enter mobile number' }).click();
     await page.getByRole('textbox', { name: 'Enter mobile number' }).fill('0764912257');
     await page.getByRole('button', { name: 'Save Property' }).click();

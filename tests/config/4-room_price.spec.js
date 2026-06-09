@@ -92,7 +92,7 @@ test('test', async ({ page }) => {
     // await page.locator('input[name="nrfbprice[2]"]').click();
     // await page.locator('input[name="nrfbprice[2]"]').fill('LKR 3,5000.00');
     await page.getByRole('button', { name: 'Save Schedule' }).click();
-    await page.waitForTimeout(4000);
+    await page.waitForTimeout(3000);
 
     // //  Production
 

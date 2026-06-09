@@ -20,96 +20,97 @@ test('test', async ({ page }) => {
     // await page.getByRole('button', { name: 'Manage Property' }).first().click();
     await page.getByRole('button', { name: 'Human Resources Employees,' }).click();
     await page.getByRole('link', { name: 'Employees' }).click();
+    await page.getByRole('button', { name: 'Close Sidebar' }).click();
 
-    // // ----- First employee -----
+    // ----- First employee -----
 
-    // await page.getByRole('button', { name: 'Add New' }).click();
-    // await page.getByRole('textbox', { name: 'Enter first name' }).click();
-    // await page.getByRole('textbox', { name: 'Enter first name' }).fill('Janani');
-    // await page.getByRole('textbox', { name: 'Enter last name' }).click();
-    // await page.getByRole('textbox', { name: 'Enter last name' }).fill('Kavindya');
-    // await page.getByRole('textbox', { name: 'Enter NIC' }).click();
-    // await page.getByRole('textbox', { name: 'Enter NIC' }).fill('0042131936'); //Change
-    // await page.getByRole('combobox', { name: 'Designation *' }).click();
-    // await page.getByLabel('Receptionist').getByText('Receptionist').click();
-    // await page.getByRole('combobox', { name: 'Department *' }).click();
-    // await page.getByLabel('Front Office').getByText('Front Office').click();
-    // await page.getByRole('combobox', { name: 'Status *' }).click();
-    // await page.getByLabel('Active').getByText('Active').click();
-    // await page.getByPlaceholder('Enter salary').click();
-    // await page.getByPlaceholder('Enter salary').fill('75000');
-    // await page.getByRole('textbox', { name: 'Enter email' }).click();
-    // await page.getByRole('textbox', { name: 'Enter email' }).fill('jananikavindya45@gmail.com');
-    // await page.getByRole('textbox', { name: 'Enter mobile' }).click();
-    // await page.getByRole('textbox', { name: 'Enter mobile' }).fill('0669654368');
-    // await page.getByRole('textbox', { name: 'Enter address' }).click();
-    // await page.getByRole('textbox', { name: 'Enter address' }).fill('Alawwa');
-    // await page.getByRole('combobox', { name: 'Province *' }).click();
-    // await page.getByLabel('North Western Province', { exact: true }).getByText('North Western Province').click();
-    // await page.getByRole('combobox', { name: 'City *' }).click();
-    // await page.getByLabel('Kurunegala').getByText('Kurunegala').click();
-    // await page.getByRole('button', { name: 'Save Employee' }).click();
-    // await page.waitForTimeout(2000);
+    await page.getByRole('button', { name: 'Add New' }).click();
+    await page.getByRole('textbox', { name: 'Enter first name' }).click();
+    await page.getByRole('textbox', { name: 'Enter first name' }).fill('Janani');
+    await page.getByRole('textbox', { name: 'Enter last name' }).click();
+    await page.getByRole('textbox', { name: 'Enter last name' }).fill('Kavindya');
+    await page.getByRole('textbox', { name: 'Enter NIC' }).click();
+    await page.getByRole('textbox', { name: 'Enter NIC' }).fill('0056985966'); //Change
+    await page.getByRole('combobox', { name: 'Designation *' }).click();
+    await page.getByLabel('Receptionist').getByText('Receptionist').click();
+    await page.getByRole('combobox', { name: 'Department *' }).click();
+    await page.getByLabel('Front Office').getByText('Front Office').click();
+    await page.getByRole('combobox', { name: 'Status *' }).click();
+    await page.getByLabel('Active').getByText('Active').click();
+    await page.getByPlaceholder('Enter salary').click();
+    await page.getByPlaceholder('Enter salary').fill('75000');
+    await page.getByRole('textbox', { name: 'Enter email' }).click();
+    await page.getByRole('textbox', { name: 'Enter email' }).fill('jananikavindya45@gmail.com');
+    await page.getByRole('textbox', { name: 'Enter mobile' }).click();
+    await page.getByRole('textbox', { name: 'Enter mobile' }).fill('0669654368');
+    await page.getByRole('textbox', { name: 'Enter address' }).click();
+    await page.getByRole('textbox', { name: 'Enter address' }).fill('Alawwa');
+    await page.getByRole('combobox', { name: 'Province *' }).click();
+    await page.getByLabel('North Western Province', { exact: true }).getByText('North Western Province').click();
+    await page.getByRole('combobox', { name: 'City *' }).click();
+    await page.getByLabel('Kurunegala').getByText('Kurunegala').click();
+    await page.getByRole('button', { name: 'Save Employee' }).click();
+    await page.waitForTimeout(2000);
 
-    // // ----- Second employee -----
+    // ----- Second employee -----
 
-    // await page.getByRole('button', { name: 'Add New' }).click();
-    // await page.getByRole('textbox', { name: 'Enter first name' }).click();
-    // await page.getByRole('textbox', { name: 'Enter first name' }).fill('Maleena');
-    // await page.getByRole('textbox', { name: 'Enter last name' }).click();
-    // await page.getByRole('textbox', { name: 'Enter last name' }).fill('Kalhari');
-    // await page.getByRole('textbox', { name: 'Enter NIC' }).click();
-    // await page.getByRole('textbox', { name: 'Enter NIC' }).fill('2918766967'); //Change
-    // await page.getByRole('combobox', { name: 'Designation *' }).click();
-    // await page.getByLabel('Receptionist').getByText('Receptionist').click();
-    // await page.getByRole('combobox', { name: 'Department *' }).click();
-    // await page.getByLabel('Front Office').getByText('Front Office').click();
-    // await page.getByRole('combobox', { name: 'Status *' }).click();
-    // await page.getByLabel('Active').getByText('Active').click();
-    // await page.getByPlaceholder('Enter salary').click();
-    // await page.getByPlaceholder('Enter salary').fill('75000');
-    // await page.getByRole('textbox', { name: 'Enter email' }).click();
-    // await page.getByRole('textbox', { name: 'Enter email' }).fill('jayalak887@gmail.com');
-    // await page.getByRole('textbox', { name: 'Enter mobile' }).click();
-    // await page.getByRole('textbox', { name: 'Enter mobile' }).fill('0978456345');
-    // await page.getByRole('textbox', { name: 'Enter address' }).click();
-    // await page.getByRole('textbox', { name: 'Enter address' }).fill('Alawwa');
-    // await page.getByRole('combobox', { name: 'Province *' }).click();
-    // await page.getByLabel('North Western Province', { exact: true }).getByText('North Western Province').click();
-    // await page.getByRole('combobox', { name: 'City *' }).click();
-    // await page.getByLabel('Kurunegala').getByText('Kurunegala').click();
-    // await page.getByRole('button', { name: 'Save Employee' }).click();
-    // await page.waitForTimeout(2000);
+    await page.getByRole('button', { name: 'Add New' }).click();
+    await page.getByRole('textbox', { name: 'Enter first name' }).click();
+    await page.getByRole('textbox', { name: 'Enter first name' }).fill('Maleena');
+    await page.getByRole('textbox', { name: 'Enter last name' }).click();
+    await page.getByRole('textbox', { name: 'Enter last name' }).fill('Kalhari');
+    await page.getByRole('textbox', { name: 'Enter NIC' }).click();
+    await page.getByRole('textbox', { name: 'Enter NIC' }).fill('2911254527'); //Change
+    await page.getByRole('combobox', { name: 'Designation *' }).click();
+    await page.getByLabel('Receptionist').getByText('Receptionist').click();
+    await page.getByRole('combobox', { name: 'Department *' }).click();
+    await page.getByLabel('Front Office').getByText('Front Office').click();
+    await page.getByRole('combobox', { name: 'Status *' }).click();
+    await page.getByLabel('Active').getByText('Active').click();
+    await page.getByPlaceholder('Enter salary').click();
+    await page.getByPlaceholder('Enter salary').fill('75000');
+    await page.getByRole('textbox', { name: 'Enter email' }).click();
+    await page.getByRole('textbox', { name: 'Enter email' }).fill('jayalak887@gmail.com');
+    await page.getByRole('textbox', { name: 'Enter mobile' }).click();
+    await page.getByRole('textbox', { name: 'Enter mobile' }).fill('0978456345');
+    await page.getByRole('textbox', { name: 'Enter address' }).click();
+    await page.getByRole('textbox', { name: 'Enter address' }).fill('Alawwa');
+    await page.getByRole('combobox', { name: 'Province *' }).click();
+    await page.getByLabel('North Western Province', { exact: true }).getByText('North Western Province').click();
+    await page.getByRole('combobox', { name: 'City *' }).click();
+    await page.getByLabel('Kurunegala').getByText('Kurunegala').click();
+    await page.getByRole('button', { name: 'Save Employee' }).click();
+    await page.waitForTimeout(2000);
 
-    // // ----- Third employee -----
+    // ----- Third employee -----
 
-    // await page.getByRole('button', { name: 'Add New' }).click();
-    // await page.getByRole('textbox', { name: 'Enter first name' }).click();
-    // await page.getByRole('textbox', { name: 'Enter first name' }).fill('Lakmali');
-    // await page.getByRole('textbox', { name: 'Enter last name' }).click();
-    // await page.getByRole('textbox', { name: 'Enter last name' }).fill('Gunasingha');
-    // await page.getByRole('textbox', { name: 'Enter NIC' }).click();
-    // await page.getByRole('textbox', { name: 'Enter NIC' }).fill('0926854317'); //Change
-    // await page.getByRole('combobox', { name: 'Designation *' }).click();
-    // await page.getByLabel('Receptionist').getByText('Receptionist').click();
-    // await page.getByRole('combobox', { name: 'Department *' }).click();
-    // await page.getByLabel('Front Office').getByText('Front Office').click();
-    // await page.getByRole('combobox', { name: 'Status *' }).click();
-    // await page.getByLabel('Active').getByText('Active').click();
-    // await page.getByPlaceholder('Enter salary').click();
-    // await page.getByPlaceholder('Enter salary').fill('75000');
-    // await page.getByRole('textbox', { name: 'Enter email' }).click();
-    // await page.getByRole('textbox', { name: 'Enter email' }).fill('slakmaligunasingha@gmail.com');
-    // await page.getByRole('textbox', { name: 'Enter mobile' }).click();
-    // await page.getByRole('textbox', { name: 'Enter mobile' }).fill('0778456345');
-    // await page.getByRole('textbox', { name: 'Enter address' }).click();
-    // await page.getByRole('textbox', { name: 'Enter address' }).fill('Alawwa');
-    // await page.getByRole('combobox', { name: 'Province *' }).click();
-    // await page.getByLabel('North Western Province', { exact: true }).getByText('North Western Province').click();
-    // await page.getByRole('combobox', { name: 'City *' }).click();
-    // await page.getByLabel('Kurunegala').getByText('Kurunegala').click();
-    // await page.getByRole('button', { name: 'Save Employee' }).click();
-    // await page.waitForTimeout(2000);
+    await page.getByRole('button', { name: 'Add New' }).click();
+    await page.getByRole('textbox', { name: 'Enter first name' }).click();
+    await page.getByRole('textbox', { name: 'Enter first name' }).fill('Lakmali');
+    await page.getByRole('textbox', { name: 'Enter last name' }).click();
+    await page.getByRole('textbox', { name: 'Enter last name' }).fill('Gunasingha');
+    await page.getByRole('textbox', { name: 'Enter NIC' }).click();
+    await page.getByRole('textbox', { name: 'Enter NIC' }).fill('0927899317'); //Change
+    await page.getByRole('combobox', { name: 'Designation *' }).click();
+    await page.getByLabel('Receptionist').getByText('Receptionist').click();
+    await page.getByRole('combobox', { name: 'Department *' }).click();
+    await page.getByLabel('Front Office').getByText('Front Office').click();
+    await page.getByRole('combobox', { name: 'Status *' }).click();
+    await page.getByLabel('Active').getByText('Active').click();
+    await page.getByPlaceholder('Enter salary').click();
+    await page.getByPlaceholder('Enter salary').fill('75000');
+    await page.getByRole('textbox', { name: 'Enter email' }).click();
+    await page.getByRole('textbox', { name: 'Enter email' }).fill('slakmaligunasingha@gmail.com');
+    await page.getByRole('textbox', { name: 'Enter mobile' }).click();
+    await page.getByRole('textbox', { name: 'Enter mobile' }).fill('0778456345');
+    await page.getByRole('textbox', { name: 'Enter address' }).click();
+    await page.getByRole('textbox', { name: 'Enter address' }).fill('Alawwa');
+    await page.getByRole('combobox', { name: 'Province *' }).click();
+    await page.getByLabel('North Western Province', { exact: true }).getByText('North Western Province').click();
+    await page.getByRole('combobox', { name: 'City *' }).click();
+    await page.getByLabel('Kurunegala').getByText('Kurunegala').click();
+    await page.getByRole('button', { name: 'Save Employee' }).click();
+    await page.waitForTimeout(2000);
 
     // // ----- Fourth employee -----
 
@@ -171,36 +172,36 @@ test('test', async ({ page }) => {
     // await page.getByRole('button', { name: 'Save Employee' }).click();
     // await page.waitForTimeout(2000);
 
-    // ----- Sixth employee -----
+    // // ----- Sixth employee -----
 
-    await page.getByRole('button', { name: 'Add New' }).click();
-    await page.getByRole('textbox', { name: 'Enter first name' }).click();
-    await page.getByRole('textbox', { name: 'Enter first name' }).fill('Chrishantha');
-    await page.getByRole('textbox', { name: 'Enter last name' }).click();
-    await page.getByRole('textbox', { name: 'Enter last name' }).fill('Costa');
-    await page.getByRole('textbox', { name: 'Enter NIC' }).click();
-    await page.getByRole('textbox', { name: 'Enter NIC' }).fill('7856321456'); //Change
-    await page.getByRole('combobox', { name: 'Designation *' }).click();
-    await page.getByLabel('Receptionist').getByText('Receptionist').click();
-    await page.getByRole('combobox', { name: 'Department *' }).click();
-    await page.getByLabel('Front Office').getByText('Front Office').click();
-    await page.getByRole('combobox', { name: 'Status *' }).click();
-    await page.getByLabel('Active').getByText('Active').click();
-    await page.getByPlaceholder('Enter salary').click();
-    await page.getByPlaceholder('Enter salary').fill('75000');
-    await page.getByRole('textbox', { name: 'Enter email' }).click();
-    await page.getByRole('textbox', { name: 'Enter email' }).fill('chrishanthacosta@gmail.com');
-    await page.getByRole('textbox', { name: 'Enter mobile' }).click();
-    await page.getByRole('textbox', { name: 'Enter mobile' }).fill('0763258945');
-    await page.getByRole('textbox', { name: 'Enter address' }).click();
-    await page.getByRole('textbox', { name: 'Enter address' }).click();
-    await page.getByRole('textbox', { name: 'Enter address' }).fill('kurunegala');
-    await page.getByRole('combobox', { name: 'Province *' }).click();
-    await page.getByLabel('North Western Province', { exact: true }).getByText('North Western Province').click();
-    await page.getByRole('combobox', { name: 'City *' }).click();
-    await page.getByLabel('Kurunegala').getByText('Kurunegala').click();
-    await page.getByRole('button', { name: 'Save Employee' }).click();
-    await page.waitForTimeout(2000);
+    // await page.getByRole('button', { name: 'Add New' }).click();
+    // await page.getByRole('textbox', { name: 'Enter first name' }).click();
+    // await page.getByRole('textbox', { name: 'Enter first name' }).fill('Chrishantha');
+    // await page.getByRole('textbox', { name: 'Enter last name' }).click();
+    // await page.getByRole('textbox', { name: 'Enter last name' }).fill('Costa');
+    // await page.getByRole('textbox', { name: 'Enter NIC' }).click();
+    // await page.getByRole('textbox', { name: 'Enter NIC' }).fill('7856321456'); //Change
+    // await page.getByRole('combobox', { name: 'Designation *' }).click();
+    // await page.getByLabel('Receptionist').getByText('Receptionist').click();
+    // await page.getByRole('combobox', { name: 'Department *' }).click();
+    // await page.getByLabel('Front Office').getByText('Front Office').click();
+    // await page.getByRole('combobox', { name: 'Status *' }).click();
+    // await page.getByLabel('Active').getByText('Active').click();
+    // await page.getByPlaceholder('Enter salary').click();
+    // await page.getByPlaceholder('Enter salary').fill('75000');
+    // await page.getByRole('textbox', { name: 'Enter email' }).click();
+    // await page.getByRole('textbox', { name: 'Enter email' }).fill('chrishanthacosta@gmail.com');
+    // await page.getByRole('textbox', { name: 'Enter mobile' }).click();
+    // await page.getByRole('textbox', { name: 'Enter mobile' }).fill('0763258945');
+    // await page.getByRole('textbox', { name: 'Enter address' }).click();
+    // await page.getByRole('textbox', { name: 'Enter address' }).click();
+    // await page.getByRole('textbox', { name: 'Enter address' }).fill('kurunegala');
+    // await page.getByRole('combobox', { name: 'Province *' }).click();
+    // await page.getByLabel('North Western Province', { exact: true }).getByText('North Western Province').click();
+    // await page.getByRole('combobox', { name: 'City *' }).click();
+    // await page.getByLabel('Kurunegala').getByText('Kurunegala').click();
+    // await page.getByRole('button', { name: 'Save Employee' }).click();
+    // await page.waitForTimeout(2000);
 
     // // ----- Seventh employee -----
 

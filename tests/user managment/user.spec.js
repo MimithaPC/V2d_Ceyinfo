@@ -20,6 +20,7 @@ test('test', async ({ page }) => {
     // await page.getByRole('button', { name: 'Manage Property' }).first().click();
     await page.getByRole('button', { name: 'User Management Control' }).click();
     await page.getByRole('link', { name: 'Users', exact: true }).click();
+    await page.getByRole('button', { name: 'Close Sidebar' }).click();
 
     // ----- First user -----
 

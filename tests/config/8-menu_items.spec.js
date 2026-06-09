@@ -129,7 +129,7 @@ test('test', async ({ page }) => {
     await page.getByRole('textbox', { name: 'Enter description' }).click();
     await page.getByRole('textbox', { name: 'Enter description' }).fill('Refreshing green tea served chilled with ice');
     await page.getByRole('button', { name: 'Add Menu Item' }).click();
-    await page.waitForTimeout(4000);
+    await page.waitForTimeout(3000);
 
     // // ---- Seventh menu items -----
 

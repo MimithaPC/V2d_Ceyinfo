@@ -17,10 +17,12 @@
         "roomprice": "playwright test tests/config/4-room_price.spec.js --headed --workers=1 --project=chromium",
         "offers": "playwright test tests/config/5-offers.spec.js --headed --workers=1 --project=chromium",
         "serial": "playwright test tests/config/6-serial_number.spec.js --headed --workers=1 --project=chromium",
-        "guestservices": "playwright test tests/frontdesk/6-guest_service.spec.js --headed --workers=1 --project=chromium",
         "travelagencies": "playwright test tests/frontdesk/7-travel_agency.spec.js --headed --workers=1 --project=chromium",
+        "guestservices": "playwright test tests/frontdesk/6-guest_service.spec.js --headed --workers=1 --project=chromium",
+        "guestpriceschedules": "playwright test tests/finance/guest_service_price_schedules.spec.js --headed --workers=1 --project=chromium",
+        "guest": "playwright test tests/frontdesk/8-guest.spec.js --headed --workers=1 --project=chromium",
 
-        "reservationsetup": "npm run roomviews && npm run roomclass && npm run rooms && npm run roomprice && npm run offers && npm run serial && npm run guestservices && npm run travelagencies",
+        "reservationsetup": "npm run roomviews && npm run roomclass && npm run rooms && npm run roomprice && npm run offers && npm run serial && npm run travelagencies && npm run guestservices  && npm run guestpriceschedules && npm run guest",
 
         "inquiries": "playwright test tests/frontdesk/1-full_form_inquiries.spec.js --headed --workers=1 --project=chromium",
         "advanced": "playwright test tests/frontdesk/2-advanced_payment.spec.js --headed --workers=1 --project=chromium",

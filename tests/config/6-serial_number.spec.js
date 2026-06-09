@@ -34,7 +34,7 @@ test('test', async ({ page }) => {
     await page.getByRole('combobox', { name: 'Reset Frequency' }).click();
     await page.getByLabel('Yearly').getByText('Yearly').click();
     await page.getByRole('button', { name: 'Save Configuration' }).click();
-    await page.waitForTimeout(4000);
+    await page.waitForTimeout(3000);
 
     //  Production
 

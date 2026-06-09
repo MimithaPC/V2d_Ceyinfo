@@ -31,7 +31,7 @@ test('test', async ({ page }) => {
     await page.getByRole('textbox', { name: 'Description' }).click();
     await page.getByRole('textbox', { name: 'Description' }).fill('Washing and ironing of guest clothes.');
     await page.getByRole('button', { name: 'Save Service' }).click();
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(1000);
 
     // ----- Add second guest service -----
 
@@ -41,7 +41,7 @@ test('test', async ({ page }) => {
     await page.getByRole('textbox', { name: 'Description' }).click();
     await page.getByRole('textbox', { name: 'Description' }).fill('Food and beverages delivered to rooms.');
     await page.getByRole('button', { name: 'Save Service' }).click();
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(1000);
 
     // ----- Add third guest service -----
 
@@ -51,7 +51,7 @@ test('test', async ({ page }) => {
     await page.getByRole('textbox', { name: 'Description' }).click();
     await page.getByRole('textbox', { name: 'Description' }).fill('Transportation between hotel and airport.');
     await page.getByRole('button', { name: 'Save Service' }).click();
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(1000);
 
     // ----- Add fourth guest service -----
 
@@ -61,7 +61,7 @@ test('test', async ({ page }) => {
     await page.getByRole('textbox', { name: 'Description' }).click();
     await page.getByRole('textbox', { name: 'Description' }).fill('Additional bed provided on request.');
     await page.getByRole('button', { name: 'Save Service' }).click();
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(1000);
 
     // ----- Add fifth guest service -----
 
@@ -71,7 +71,7 @@ test('test', async ({ page }) => {
     await page.getByRole('textbox', { name: 'Description' }).click();
     await page.getByRole('textbox', { name: 'Description' }).fill('Relaxing wellness and massage treatments.');
     await page.getByRole('button', { name: 'Save Service' }).click();
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(1000);
 
     // ----- Add sixth guest service -----
 
@@ -81,7 +81,7 @@ test('test', async ({ page }) => {
     await page.getByRole('textbox', { name: 'Description' }).click();
     await page.getByRole('textbox', { name: 'Description' }).fill('Taxi booking for guest transportation.');
     await page.getByRole('button', { name: 'Save Service' }).click();
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(1000);
 
     // ----- Add seventh guest service -----
 
@@ -91,7 +91,7 @@ test('test', async ({ page }) => {
     await page.getByRole('textbox', { name: 'Description' }).click();
     await page.getByRole('textbox', { name: 'Description' }).fill('Care and assistance for guest pets.');
     await page.getByRole('button', { name: 'Save Service' }).click();
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(1000);
 
     // ----- Add eighth guest service -----
 
@@ -101,7 +101,7 @@ test('test', async ({ page }) => {
     await page.getByRole('textbox', { name: 'Description' }).click();
     await page.getByRole('textbox', { name: 'Description' }).fill('Meals packed for travel or tours.');
     await page.getByRole('button', { name: 'Save Service' }).click();
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(1000);
 
     // ----- Add ninth guest service -----
 
@@ -111,7 +111,7 @@ test('test', async ({ page }) => {
     await page.getByRole('textbox', { name: 'Description' }).click();
     await page.getByRole('textbox', { name: 'Description' }).fill('Snacks and drinks available in room.');
     await page.getByRole('button', { name: 'Save Service' }).click();
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(1000);
 
     // ----- Add tenth guest service -----
 
@@ -121,6 +121,6 @@ test('test', async ({ page }) => {
     await page.getByRole('textbox', { name: 'Description' }).click();
     await page.getByRole('textbox', { name: 'Description' }).fill('Professional ironing of clothes.');
     await page.getByRole('button', { name: 'Save Service' }).click();
-    await page.waitForTimeout(4000);
+    await page.waitForTimeout(3000);
 
 });

@@ -31,19 +31,23 @@ test('test', async ({ page }) => {
     await page.getByRole('textbox', { name: 'Voucher No' }).fill('123');
     await page.getByRole('textbox', { name: 'Tour No' }).click();
     await page.getByRole('textbox', { name: 'Tour No' }).fill('456');
-    await page.waitForTimeout(10000);
+    await page.waitForTimeout(15000);
     // await page.locator('tr:nth-child(2) > .px-2.py-1 > .flex > .inline-flex.items-center.justify-center.gap-2.whitespace-nowrap.rounded-md.text-sm').click();
     // await page.getByRole('combobox').filter({ hasText: 'Select Room' }).click();
     // await page.waitForTimeout(2000);
     // await page.getByRole('option', { name: '103' }).click();
     // await page.locator('input[type="text"]').dblclick();
     // await page.locator('input[type="text"]').fill('LKR 3,0000.00');
+
+    // ----- Add guest services -----
+
     // await page.locator('td:nth-child(10) > .flex > .inline-flex.items-center.justify-center.gap-2.whitespace-nowrap.font-medium.transition-colors.focus-visible\\:outline-none.focus-visible\\:ring-1.focus-visible\\:ring-ring.disabled\\:pointer-events-none.disabled\\:opacity-50.\\[\\&_svg\\]\\:pointer-events-none.\\[\\&_svg\\]\\:size-4.\\[\\&_svg\\]\\:shrink-0.border.bg-background.shadow-sm.hover\\:text-accent-foreground.rounded-md.h-7').click();
     // await page.getByRole('combobox').click();
     // await page.getByText('Standard Service Package').click();
     // await page.getByRole('checkbox').nth(2).click();
     // await page.getByRole('checkbox').nth(3).click();
     // await page.getByRole('button', { name: 'Authorize Entry' }).click();
+
     await page.getByRole('button', { name: 'Add Guest Info' }).click();
     await page.getByRole('button', { name: 'Search Guest' }).click();
     // await page.getByRole('row', { name: '#404 T thilanka — thilabnka@' }).getByRole('button').click();

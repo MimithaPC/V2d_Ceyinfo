@@ -19,17 +19,19 @@ test('test', async ({ page }) => {
     await page.waitForTimeout(2000);
     // await page.getByRole('button', { name: 'Manage Property' }).first().click();
     await page.getByRole('button', { name: 'Configuration System settings' }).click();
+    await page.getByRole('button', { name: 'Room Setup' }).click();
     await page.getByRole('link', { name: 'Room Price Class' }).click();
     await page.getByRole('button', { name: 'Add Price Class' }).click();
+    await page.getByRole('button', { name: 'Close Sidebar' }).click();
 
     // ----- Set not applicable -----
 
     await page.getByRole('button', { name: 'Create 4 Room Classes' }).click();
-    await page.waitForTimeout(4000);
+    await page.waitForTimeout(3000);
 
     // // ----- No set not applicable -----
 
     // await page.getByRole('button', { name: 'Create 12 Room Classes' }).click();
-    // await page.waitForTimeout(4000);
+    // await page.waitForTimeout(3000);
 
 });

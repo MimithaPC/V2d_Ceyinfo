@@ -19,13 +19,15 @@ test('test', async ({ page }) => {
     await page.waitForTimeout(2000);
     // await page.getByRole('button', { name: 'Manage Property' }).first().click();
     await page.getByRole('button', { name: 'Configuration System settings' }).click();
+    await page.getByRole('button', { name: 'Room Setup' }).click();
     await page.getByRole('link', { name: 'Room view / Type / Category' }).click();
+    await page.getByRole('button', { name: 'Close Sidebar' }).click();
 
     // ----- Set not applicable -----
 
     await page.getByRole('switch', { name: 'Not Applicable' }).click();
     await page.getByRole('button', { name: 'Confirm' }).click();
-    await page.waitForTimeout(4000);
+    await page.waitForTimeout(3000);
 
 
     // // ----- First view -----
@@ -47,6 +49,6 @@ test('test', async ({ page }) => {
     // await page.getByRole('button', { name: 'Add' }).first().click();
     // await page.getByRole('textbox', { name: 'Room View *' }).fill('Garden View');
     // await page.getByRole('button', { name: 'Save' }).click();
-    // await page.waitForTimeout(4000);
+    // await page.waitForTimeout(3000);
 
 });

@@ -61,6 +61,6 @@ test('test', async ({ page }) => {
     await page.getByRole('textbox', { name: 'Enter description' }).click();
     await page.getByRole('textbox', { name: 'Enter description' }).fill('Kitchen that prepares food and drinks for poolside guests.');
     await page.getByRole('button', { name: 'Save Location' }).click();
-    await page.waitForTimeout(4000);
+    await page.waitForTimeout(3000);
 
 });

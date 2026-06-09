@@ -162,6 +162,6 @@ test('test', async ({ page }) => {
     await page.getByRole('textbox', { name: 'Enter description' }).click();
     await page.getByRole('textbox', { name: 'Enter description' }).fill('Refreshing Coca Cola for a cool drink.');
     await page.getByRole('button', { name: 'Save' }).click();
-    await page.waitForTimeout(4000);
+    await page.waitForTimeout(3000);
 
 });

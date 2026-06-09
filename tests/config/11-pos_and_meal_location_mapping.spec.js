@@ -57,6 +57,6 @@ test('test', async ({ page }) => {
     await page.getByLabel('Poolside Restaurant POS').getByText('Poolside Restaurant POS').click();
     await page.getByRole('button', { name: 'Poolside Kitchen' }).click();
     await page.getByRole('button', { name: 'Save Mapping' }).click();
-    await page.waitForTimeout(4000);
+    await page.waitForTimeout(3000);
 
 });

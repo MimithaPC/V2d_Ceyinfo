@@ -20,6 +20,10 @@ test('test', async ({ page }) => {
     // await page.getByRole('button', { name: 'Manage Property' }).first().click();
     await page.getByRole('button', { name: 'Configuration System settings' }).click();
     await page.getByRole('link', { name: 'Offers' }).click();
+    await page.getByRole('button', { name: 'Close Sidebar' }).click();
+
+    // ----- Add first offer -----
+
     await page.getByRole('button', { name: 'Add Offer' }).click();
     await page.getByRole('textbox', { name: 'Enter the offer name' }).click();
     await page.getByRole('textbox', { name: 'Enter the offer name' }).fill('Summer offer');
@@ -32,7 +36,7 @@ test('test', async ({ page }) => {
     await page.getByRole('textbox', { name: 'Description *' }).click();
     await page.getByRole('textbox', { name: 'Description *' }).fill('Summer');
     await page.getByRole('button', { name: 'Submit Offer' }).click();
-    await page.waitForTimeout(4000);
+    await page.waitForTimeout(3000);
 
     // //  Production
 

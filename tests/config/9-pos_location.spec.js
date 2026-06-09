@@ -61,6 +61,6 @@ test('test', async ({ page }) => {
     // await page.getByRole('combobox', { name: 'Store Room (optional)' }).click();
     // await page.locator('div').filter({ hasText: /^No store rooms available$/ }).nth(2).click();
     await page.getByRole('button', { name: 'Add Location' }).click();
-    await page.waitForTimeout(4000); 
+    await page.waitForTimeout(3000); 
     
 });
