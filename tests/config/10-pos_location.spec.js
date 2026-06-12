@@ -9,9 +9,9 @@ test('test', async ({ page }) => {
     await page.goto('https://v2d.ceyinfo.com/', { waitUntil: 'networkidle' });
     await page.getByRole('link', { name: 'Login' }).click();
     await page.getByRole('textbox', { name: 'Email' }).click();
-    await page.getByRole('textbox', { name: 'Email' }).fill('slakmaligunasingha@gmail.com');
+    await page.getByRole('textbox', { name: 'Email' }).fill('mimithaprabodani@gmail.com');
     await page.getByRole('textbox', { name: '********' }).click();
-    await page.getByRole('textbox', { name: '********' }).fill('123456');
+    await page.getByRole('textbox', { name: '********' }).fill('Mi@123');
     await page.getByRole('button', { name: 'Login' }).click();
     await page.waitForTimeout(2000);
     // await page.locator('div:nth-child(14) > .inline-flex').click();
@@ -20,6 +20,7 @@ test('test', async ({ page }) => {
     // await page.getByRole('button', { name: 'Manage Property' }).first().click();
     await page.getByRole('button', { name: 'Configuration System settings' }).click();
     await page.getByRole('button', { name: 'F&B Operations' }).click();
+    await page.getByRole('button', { name: 'Setup' }).click();
     await page.getByRole('link', { name: 'POS Location', exact: true }).click();
     await page.getByRole('button', { name: 'Close Sidebar' }).click();
 
@@ -31,7 +32,7 @@ test('test', async ({ page }) => {
     // await page.getByRole('combobox', { name: 'Store Room (optional)' }).click();
     // await page.locator('div').filter({ hasText: /^No store rooms available$/ }).nth(2).click();
     await page.getByRole('button', { name: 'Add Location' }).click();
-    await page.waitForTimeout(2000); 
+    await page.waitForTimeout(1000); 
 
     // ---- Add second pos location -----
 
@@ -41,7 +42,7 @@ test('test', async ({ page }) => {
     // await page.getByRole('combobox', { name: 'Store Room (optional)' }).click();
     // await page.locator('div').filter({ hasText: /^No store rooms available$/ }).nth(2).click();
     await page.getByRole('button', { name: 'Add Location' }).click();
-    await page.waitForTimeout(2000); 
+    await page.waitForTimeout(1000); 
 
     // ---- Add third pos location -----
 
@@ -51,7 +52,7 @@ test('test', async ({ page }) => {
     // await page.getByRole('combobox', { name: 'Store Room (optional)' }).click();
     // await page.locator('div').filter({ hasText: /^No store rooms available$/ }).nth(2).click();
     await page.getByRole('button', { name: 'Add Location' }).click();
-    await page.waitForTimeout(2000); 
+    await page.waitForTimeout(1000); 
 
     // ---- Add fourth pos location -----
 

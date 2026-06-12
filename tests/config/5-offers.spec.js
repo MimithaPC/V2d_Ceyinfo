@@ -19,6 +19,7 @@ test('test', async ({ page }) => {
     await page.waitForTimeout(2000);
     // await page.getByRole('button', { name: 'Manage Property' }).first().click();
     await page.getByRole('button', { name: 'Configuration System settings' }).click();
+    await page.getByRole('button', { name: 'Property and Rooms' }).click();
     await page.getByRole('link', { name: 'Offers' }).click();
     await page.getByRole('button', { name: 'Close Sidebar' }).click();
 

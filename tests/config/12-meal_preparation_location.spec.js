@@ -16,10 +16,11 @@ test('test', async ({ page }) => {
     await page.waitForTimeout(2000);
     // await page.locator('div:nth-child(14) > .inline-flex').click();
     // await page.getByRole('button', { name: 'Manage Property' }).nth(2).click();
-    // await page.waitForTimeout(2000);
-    await page.getByRole('button', { name: 'Manage Property' }).first().click();
+    await page.waitForTimeout(2000);
+    // await page.getByRole('button', { name: 'Manage Property' }).first().click();
     await page.getByRole('button', { name: 'Configuration System settings' }).click();
     await page.getByRole('button', { name: 'F&B Operations' }).click();
+    await page.getByRole('button', { name: 'Setup' }).click();
     await page.getByRole('link', { name: 'Meal Preparation Location', exact: true }).click();
     await page.getByRole('button', { name: 'Close Sidebar' }).click();
 
@@ -31,7 +32,7 @@ test('test', async ({ page }) => {
     await page.getByRole('textbox', { name: 'Enter description' }).click();
     await page.getByRole('textbox', { name: 'Enter description' }).fill('Main area where restaurant meals are prepared.');
     await page.getByRole('button', { name: 'Save Location' }).click();
-    await page.waitForTimeout(2000); 
+    await page.waitForTimeout(1000); 
 
     // ----- Add second meal preparation location -----
 
@@ -41,7 +42,7 @@ test('test', async ({ page }) => {
     await page.getByRole('textbox', { name: 'Enter description' }).click();
     await page.getByRole('textbox', { name: 'Enter description' }).fill('Area where drinks and beverages are prepared.');
     await page.getByRole('button', { name: 'Save Location' }).click();
-    await page.waitForTimeout(2000); 
+    await page.waitForTimeout(1000); 
 
     // ----- Add third meal preparation location -----
 
@@ -51,7 +52,7 @@ test('test', async ({ page }) => {
     await page.getByRole('textbox', { name: 'Enter description' }).click();
     await page.getByRole('textbox', { name: 'Enter description' }).fill('Kitchen for preparing café food and snacks.');
     await page.getByRole('button', { name: 'Save Location' }).click();
-    await page.waitForTimeout(2000); 
+    await page.waitForTimeout(1000); 
 
     // ----- Add fourth meal preparation location -----
 

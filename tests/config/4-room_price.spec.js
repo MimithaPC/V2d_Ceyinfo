@@ -19,7 +19,8 @@ test('test', async ({ page }) => {
     await page.waitForTimeout(2000);
     // await page.getByRole('button', { name: 'Manage Property' }).first().click();
     await page.getByRole('button', { name: 'Configuration System settings' }).click();
-    await page.getByRole('link', { name: 'Room Price', exact: true }).click();
+    await page.getByRole('button', { name: 'Property and Rooms' }).click();
+    await page.getByRole('link', { name: 'Room Price' }).click();
     await page.getByRole('button', { name: 'Close Sidebar' }).click();
     await page.getByRole('button', { name: 'Add New' }).click();
     await page.getByRole('textbox', { name: 'e.g., Summer Season' }).click();
