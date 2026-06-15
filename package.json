@@ -1,13 +1,13 @@
 {
-  "name": "playwright-test",
-  "version": "1.0.0",
-  "main": "index.js",
+    "name": "playwright-test",
+    "version": "1.0.0",
+    "main": "index.js",
   
     "scripts": {
 
         "property": "playwright test tests/property_create.spec.js --headed --workers=1 --project=chromium",
         "employees": "playwright test tests/hr/employees.spec.js --headed --workers=1 --project=chromium",
-        "users": "playwright test tests/user management/user.spec.js --headed --workers=1 --project=chromium",
+        "users": "playwright test tests/user management/new_user.spec.js --headed --workers=1 --project=chromium",
         
         "propertysetup": "npm run property && npm run employees && npm run users",
 
@@ -30,19 +30,34 @@
         "checkin": "playwright test tests/frontdesk/4-check_in.spec.js --headed --workers=1 --project=chromium",
         "checkout": "playwright test tests/frontdesk/5-check_out.spec.js --headed --workers=1 --project=chromium",
 
-        "insertreservation": "npm run inquiries && npm run advanced && npm run roomallocation && npm run checkin && npm run checkout"
+        "insertreservation": "npm run inquiries && npm run advanced && npm run roomallocation && npm run checkin && npm run checkout",
+
+        "menutype": "playwright test tests/config/7-menu_type.spec.js --headed --workers=1 --project=chromium",
+        "pricetype": "playwright test tests/config/8-price_type.spec.js --headed --workers=1 --project=chromium",
+        "pricetier": "playwright test tests/config/9-price_tier.spec.js --headed --workers=1 --project=chromium",
+        "menucategory": "playwright test tests/config/10-menu_category.spec.js --headed --workers=1 --project=chromium",
+        "menuitem": "playwright test tests/config/11-menu_item.spec.js --headed --workers=1 --project=chromium",
+        "itemprice": "playwright test tests/config/12-menu_item_price.spec.js --headed --workers=1 --project=chromium",
+        "location": "playwright test tests/config/13-pos_location.spec.js --headed --workers=1 --project=chromium",
+        "locationtable": "playwright test tests/config/14-pos_location_table.spec.js --headed --workers=1 --project=chromium",
+        "preparationlocation": "playwright test tests/config/15-meal_preparation_location.spec.js --headed --workers=1 --project=chromium",
+        "itemmapping": "playwright test tests/config/16-meal_preparation_location_and_items_mapping.spec.js --headed --workers=1 --project=chromium",
+        "locationmapping": "playwright test tests/config/17-pos_and_meal_location_mapping.spec.js --headed --workers=1 --project=chromium",
+        "posuser": "playwright test tests/user management/pos_user.spec.js --headed --workers=1 --project=chromium",
+
+        "possetup": "npm run menutype && npm run pricetype && npm run pricetier && npm run menucategory && npm run menuitem && npm run itemprice && npm run location && npm run locationtable && npm run preparationlocation && npm run itemmapping && npm run locationmapping && npm run posuser"
 
     },
     
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
 
-  "devDependencies": {
+    "devDependencies": {
 
     "@playwright/test": "^1.59.1",
     "@types/node": "^25.6.0"
     
-  }
+    }
 }
