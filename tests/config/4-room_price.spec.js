@@ -95,6 +95,14 @@ test('test', async ({ page }) => {
     await page.getByRole('button', { name: 'Save Schedule' }).click();
     await page.waitForTimeout(3000);
 
+   
+   
+   
+   
+   
+   
+   
+   
     // //  Production
 
     // await page.goto('https://ceyinfo.com/', { waitUntil: 'networkidle' });
@@ -106,18 +114,20 @@ test('test', async ({ page }) => {
     // await page1.getByRole('textbox', { name: '********' }).click();
     // await page1.getByRole('textbox', { name: '********' }).fill('Mi@123');
     // await page1.getByRole('button', { name: 'Login' }).click();
-    // await page.waitForTimeout(2000);
-    // // await page1.locator('div:nth-child(12) > .inline-flex').click(); //Change
+    // await page1.waitForTimeout(2000);
+    // // await page1.locator('div:nth-child(14) > .inline-flex').click();
     // // await page1.getByRole('button', { name: 'Manage Property' }).nth(2).click();
-    // await page1.getByRole('button', { name: 'Manage Property' }).first().click();
+    // await page1.waitForTimeout(2000);
+    // // await page1.getByRole('button', { name: 'Manage Property' }).first().click();
     // await page1.getByRole('button', { name: 'Configuration System settings' }).click();
+    // await page1.getByRole('button', { name: 'Property and Rooms' }).click();
     // await page1.getByRole('link', { name: 'Room Price' }).click();
     // await page1.getByRole('button', { name: 'Close Sidebar' }).click();
     // await page1.getByRole('button', { name: 'Add New' }).click();
     // await page1.getByRole('textbox', { name: 'e.g., Summer Season' }).click();
     // await page1.getByRole('textbox', { name: 'e.g., Summer Season' }).fill('Summer season');
     // await page1.getByRole('button', { name: 'Select start date', exact: true }).click();
-    // await page1.getByRole('gridcell', { name: '6' }).nth(1).click();
+    // await page1.getByRole('gridcell', { name: '1' }).nth(1).click();
     // await page1.getByRole('button', { name: 'Select end date' }).click();
     // await page1.getByRole('button', { name: 'Go to next month' }).click();
     // await page1.getByRole('button', { name: 'Go to next month' }).click();
@@ -126,7 +136,7 @@ test('test', async ({ page }) => {
     // await page1.getByRole('button', { name: 'Go to next month' }).click();
     // await page1.getByRole('button', { name: 'Go to next month' }).click();
     // await page1.getByRole('button', { name: 'Go to next month' }).click();
-    // await page1.getByRole('gridcell', { name: '31' }).click();
+    // await page1.getByRole('gridcell', { name: '27' }).nth(1).click();
     // await page1.getByRole('cell').nth(2).click();
     // await page1.locator('input[name="roprice[0]"]').fill('LKR 2,0000.00');
     // await page1.locator('input[name="bbprice[0]"]').click();
@@ -150,33 +160,41 @@ test('test', async ({ page }) => {
     // await page1.locator('input[name="hbprice[2]"]').click();
     // await page1.locator('input[name="hbprice[2]"]').fill('LKR 3,0000.00');
     // await page1.locator('input[name="fbprice[2]"]').click();
-    // await page1.locator('input[name="fbprice[2]"]').fill('LKR 3,2000.00');
-    // await page1.locator('input[name="nrroprice[0]"]').click();
-    // await page1.locator('input[name="nrroprice[0]"]').fill('LKR 2,2000.00');
-    // await page1.locator('input[name="nrbbprice[0]"]').click();
-    // await page1.locator('input[name="nrbbprice[0]"]').fill('LKR 2,5000.00');
-    // await page1.locator('input[name="nrhbprice[0]"]').click();
-    // await page1.locator('input[name="nrhbprice[0]"]').fill('LKR 2,8000.00');
-    // await page1.locator('input[name="nrfbprice[0]"]').click();
-    // await page1.locator('input[name="nrfbprice[0]"]').fill('LKR 3,0000.00');
-    // await page1.locator('input[name="nrroprice[1]"]').click();
-    // await page1.locator('input[name="nrroprice[1]"]').fill('LKR 2,5000.00');
-    // await page1.locator('input[name="nrbbprice[1]"]').click();
-    // await page1.locator('input[name="nrbbprice[1]"]').fill('LKR 2,8000.00');
-    // await page1.locator('input[name="nrhbprice[1]"]').click();
-    // await page1.locator('input[name="nrhbprice[1]"]').fill('LKR 3,0000.00');
-    // await page1.locator('input[name="nrfbprice[1]"]').click();
-    // await page1.locator('input[name="nrfbprice[1]"]').fill('LKR 3,2000.00');
-    // await page1.locator('input[name="nrroprice[2]"]').click();
-    // await page1.locator('input[name="nrroprice[2]"]').fill('LKR 2,8000.00');
-    // await page1.locator('input[name="nrbbprice[2]"]').click();
-    // await page1.locator('input[name="nrbbprice[2]"]').fill('LKR 3,0000.00');
-    // await page1.locator('input[name="nrhbprice[2]"]').click();
-    // await page1.locator('input[name="nrhbprice[2]"]').fill('LKR 3,2000.00');
-    // await page1.locator('input[name="nrfbprice[2]"]').click();
-    // await page1.locator('input[name="nrfbprice[2]"]').fill('LKR 3,5000.00');
+    // await page1.locator('input[name="fbprice[2]"]').fill('LKR 3,2000.00');   
+    // await page1.locator('input[name="roprice[3]"]').click();
+    // await page1.locator('input[name="roprice[3]"]').fill('LKR 2,6000.00');
+    // await page1.locator('input[name="bbprice[3]"]').click();
+    // await page1.locator('input[name="bbprice[3]"]').fill('LKR 2,9000.00');
+    // await page1.locator('input[name="hbprice[3]"]').click();
+    // await page1.locator('input[name="hbprice[3]"]').fill('LKR 3,2000.00');
+    // await page1.locator('input[name="fbprice[3]"]').click();
+    // await page1.locator('input[name="fbprice[3]"]').fill('LKR 3,4000.00');
+    // // await page1.locator('input[name="nrroprice[0]"]').click();
+    // // await page1.locator('input[name="nrroprice[0]"]').fill('LKR 2,2000.00');
+    // // await page1.locator('input[name="nrbbprice[0]"]').click();
+    // // await page1.locator('input[name="nrbbprice[0]"]').fill('LKR 2,5000.00');
+    // // await page1.locator('input[name="nrhbprice[0]"]').click();
+    // // await page1.locator('input[name="nrhbprice[0]"]').fill('LKR 2,8000.00');
+    // // await page1.locator('input[name="nrfbprice[0]"]').click();
+    // // await page1.locator('input[name="nrfbprice[0]"]').fill('LKR 3,0000.00');
+    // // await page1.locator('input[name="nrroprice[1]"]').click();
+    // // await page1.locator('input[name="nrroprice[1]"]').fill('LKR 2,5000.00');
+    // // await page1.locator('input[name="nrbbprice[1]"]').click();
+    // // await page1.locator('input[name="nrbbprice[1]"]').fill('LKR 2,8000.00');
+    // // await page1.locator('input[name="nrhbprice[1]"]').click();
+    // // await page1.locator('input[name="nrhbprice[1]"]').fill('LKR 3,0000.00');
+    // // await page1.locator('input[name="nrfbprice[1]"]').click();
+    // // await page1.locator('input[name="nrfbprice[1]"]').fill('LKR 3,2000.00');
+    // // await page1.locator('input[name="nrroprice[2]"]').click();
+    // // await page1.locator('input[name="nrroprice[2]"]').fill('LKR 2,8000.00');
+    // // await page1.locator('input[name="nrbbprice[2]"]').click();
+    // // await page1.locator('input[name="nrbbprice[2]"]').fill('LKR 3,0000.00');
+    // // await page1.locator('input[name="nrhbprice[2]"]').click();
+    // // await page1.locator('input[name="nrhbprice[2]"]').fill('LKR 3,2000.00');
+    // // await page1.locator('input[name="nrfbprice[2]"]').click();
+    // // await page1.locator('input[name="nrfbprice[2]"]').fill('LKR 3,5000.00');
     // await page1.getByRole('button', { name: 'Save Schedule' }).click();
-    // await page1.waitForTimeout(4000);
+    // await page1.waitForTimeout(3000);
 
 
 });

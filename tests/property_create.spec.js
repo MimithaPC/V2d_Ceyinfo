@@ -18,14 +18,22 @@ test('test', async ({ page }) => {
     await page.getByRole('link', { name: 'Add New Property' }).click();
     await page.getByRole('button', { name: 'Add Property' }).click();
     await page.getByRole('textbox', { name: 'Enter property name' }).click();
-    await page.getByRole('textbox', { name: 'Enter property name' }).fill('Silver Crest Hotel Colombo'); //Change
+    await page.getByRole('textbox', { name: 'Enter property name' }).fill('Hotel Kurunegala'); //Change
     await page.getByRole('textbox', { name: 'Enter email address' }).click();
-    await page.getByRole('textbox', { name: 'Enter email address' }).fill('silvercrestcolombo@gmail.com'); //Change
+    await page.getByRole('textbox', { name: 'Enter email address' }).fill('hotelkuru@gmail.com'); //Change
     await page.getByRole('textbox', { name: 'Enter mobile number' }).click();
     await page.getByRole('textbox', { name: 'Enter mobile number' }).fill('0764912257');
     await page.getByRole('button', { name: 'Save Property' }).click();
     await page.waitForTimeout(2000);
 
+    
+    
+    
+    
+    
+    
+    
+    
     // //  Production
 
     // await page.goto('https://ceyinfo.com/', { waitUntil: 'networkidle' });
@@ -42,9 +50,9 @@ test('test', async ({ page }) => {
     // await page1.getByRole('link', { name: 'Add New Property' }).click();
     // await page1.getByRole('button', { name: 'Add Property' }).click();
     // await page1.getByRole('textbox', { name: 'Enter property name' }).click();
-    // await page1.getByRole('textbox', { name: 'Enter property name' }).fill('Global Hotel'); //Change
+    // await page1.getByRole('textbox', { name: 'Enter property name' }).fill('Silver Crest Hotel'); //Change
     // await page1.getByRole('textbox', { name: 'Enter email address' }).click();
-    // await page1.getByRole('textbox', { name: 'Enter email address' }).fill('Global@gmail.com'); //Change
+    // await page1.getByRole('textbox', { name: 'Enter email address' }).fill('Silvercrest@gmail.com'); //Change
     // await page1.getByRole('textbox', { name: 'Enter mobile number' }).click();
     // await page1.getByRole('textbox', { name: 'Enter mobile number' }).fill('0764912257');
     // await page1.getByRole('button', { name: 'Save Property' }).click();

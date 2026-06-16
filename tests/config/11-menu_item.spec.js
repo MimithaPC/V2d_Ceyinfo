@@ -245,7 +245,7 @@ test('test', async ({ page }) => {
 
     // ---- Twelfth menu items -----
 
-   await page.getByRole('button', { name: 'Add Menu Item' }).click();
+    await page.getByRole('button', { name: 'Add Menu Item' }).click();
     await page.getByRole('textbox', { name: 'e.g. Chicken Fried Rice' }).click();
     await page.getByRole('textbox', { name: 'e.g. Chicken Fried Rice' }).fill('Spicy Fish Curry');
     await page.getByRole('textbox', { name: 'e.g. CHK FR RICE' }).click();
@@ -265,7 +265,272 @@ test('test', async ({ page }) => {
 
     
     
+    
+    
+    
+    
+    
+    
+    // //  Production
 
+    // await page.goto('https://ceyinfo.com/', { waitUntil: 'networkidle' });
+    // const page1Promise = page.waitForEvent('popup');
+    // await page.getByRole('link', { name: 'Login' }).click();
+    // const page1 = await page1Promise;
+    // await page1.getByRole('textbox', { name: 'Email' }).click();
+    // await page1.getByRole('textbox', { name: 'Email' }).fill('mimithaprabodani@gmail.com');
+    // await page1.getByRole('textbox', { name: '********' }).click();
+    // await page1.getByRole('textbox', { name: '********' }).fill('Mi@123');
+    // await page1.getByRole('button', { name: 'Login' }).click();
+    // await page1.waitForTimeout(2000);
+    // // await page1.locator('div:nth-child(14) > .inline-flex').click();
+    // // await page1.getByRole('button', { name: 'Manage Property' }).nth(2).click();
+    // await page1.waitForTimeout(2000);
+    // // await page1.getByRole('button', { name: 'Manage Property' }).first().click();
+    // await page1.getByRole('button', { name: 'Configuration System settings' }).click();
+    // await page1.getByRole('button', { name: 'F&B Operations' }).click();
+    // await page1.getByRole('link', { name: 'Menu', exact: true }).click();
+    // await page1.getByRole('button', { name: 'Close Sidebar' }).click();
+
+    // // ---- First menu items -----
+
+    // await page1.getByRole('button', { name: 'Add Menu Item' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. Chicken Fried Rice' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. Chicken Fried Rice' }).fill('Lemon Iced Tea');
+    // await page1.getByRole('textbox', { name: 'e.g. CHK FR RICE' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. CHK FR RICE' }).fill('LEM ICD TEA');
+    // await page1.getByRole('textbox', { name: 'e.g. CFR001' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. CFR001' }).fill('MI-0001');
+    // await page1.getByRole('combobox').filter({ hasText: /^Select category$/ }).click();
+    // await page1.getByLabel('[Beverage]Cold Beverages').getByText('[Beverage]Cold Beverages').click();
+    // await page1.getByRole('combobox').filter({ hasText: 'Select sub category' }).click();
+    // await page1.getByLabel('Iced Tea').getByText('Iced Tea').click();
+    // await page1.getByPlaceholder('e.g. 15').click();
+    // await page1.getByPlaceholder('e.g. 15').fill('15');
+    // await page1.getByRole('textbox', { name: 'Enter item description' }).click();
+    // await page1.getByRole('textbox', { name: 'Enter item description' }).fill('Refreshing lemon-flavored iced tea served chilled with ice cubes.');
+    // await page1.getByRole('button', { name: 'Add Item' }).click();
+    // await page1.waitForTimeout(2000);
+
+    // // ---- Second menu items -----
+
+    // await page1.getByRole('button', { name: 'Add Menu Item' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. Chicken Fried Rice' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. Chicken Fried Rice' }).fill('Spicy Fish Curry');
+    // await page1.getByRole('textbox', { name: 'e.g. CHK FR RICE' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. CHK FR RICE' }).fill('SPCY FSH CURRY');
+    // await page1.getByRole('textbox', { name: 'e.g. CFR001' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. CFR001' }).fill('MI-0002');
+    // await page1.getByRole('combobox').filter({ hasText: /^Select category$/ }).click();
+    // await page1.getByLabel('[Food]Curries').getByText('[Food]Curries').click();
+    // await page1.getByRole('combobox').filter({ hasText: 'Select sub category' }).click();
+    // await page1.getByLabel('Fish curries').getByText('Fish curries').click();
+    // await page1.getByPlaceholder('e.g. 15').click();
+    // await page1.getByPlaceholder('e.g. 15').fill('15');
+    // await page1.getByRole('textbox', { name: 'Enter item description' }).click();
+    // await page1.getByRole('textbox', { name: 'Enter item description' }).fill('Spicy and flavorful fish curry with a perfect balance of spices.');
+    // await page1.getByRole('button', { name: 'Add Item' }).click();
+    // await page1.waitForTimeout(2000);
+
+    // // ---- Third menu items -----
+
+    // await page1.getByRole('button', { name: 'Add Menu Item' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. Chicken Fried Rice' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. Chicken Fried Rice' }).fill('Spicy Fish Curry');
+    // await page1.getByRole('textbox', { name: 'e.g. CHK FR RICE' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. CHK FR RICE' }).fill('SPCY FSH CURRY');
+    // await page1.getByRole('textbox', { name: 'e.g. CFR001' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. CFR001' }).fill('MI-0002');
+    // await page1.getByRole('combobox').filter({ hasText: /^Select category$/ }).click();
+    // await page1.getByLabel('[Food]Curries').getByText('[Food]Curries').click();
+    // await page1.getByRole('combobox').filter({ hasText: 'Select sub category' }).click();
+    // await page1.getByLabel('Fish curries').getByText('Fish curries').click();
+    // await page1.getByPlaceholder('e.g. 15').click();
+    // await page1.getByPlaceholder('e.g. 15').fill('15');
+    // await page1.getByRole('textbox', { name: 'Enter item description' }).click();
+    // await page1.getByRole('textbox', { name: 'Enter item description' }).fill('Spicy and flavorful fish curry with a perfect balance of spices.');
+    // await page1.getByRole('button', { name: 'Add Item' }).click();
+    // await page1.waitForTimeout(2000);
+
+    // // ---- Fourth menu items -----
+
+    // await page1.getByRole('button', { name: 'Add Menu Item' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. Chicken Fried Rice' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. Chicken Fried Rice' }).fill('Spicy Fish Curry');
+    // await page1.getByRole('textbox', { name: 'e.g. CHK FR RICE' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. CHK FR RICE' }).fill('SPCY FSH CURRY');
+    // await page1.getByRole('textbox', { name: 'e.g. CFR001' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. CFR001' }).fill('MI-0002');
+    // await page1.getByRole('combobox').filter({ hasText: /^Select category$/ }).click();
+    // await page1.getByLabel('[Food]Curries').getByText('[Food]Curries').click();
+    // await page1.getByRole('combobox').filter({ hasText: 'Select sub category' }).click();
+    // await page1.getByLabel('Fish curries').getByText('Fish curries').click();
+    // await page1.getByPlaceholder('e.g. 15').click();
+    // await page1.getByPlaceholder('e.g. 15').fill('15');
+    // await page1.getByRole('textbox', { name: 'Enter item description' }).click();
+    // await page1.getByRole('textbox', { name: 'Enter item description' }).fill('Spicy and flavorful fish curry with a perfect balance of spices.');
+    // await page1.getByRole('button', { name: 'Add Item' }).click();
+    // await page1.waitForTimeout(2000);
+
+    // // ---- Fifth menu items -----
+
+    // await page1.getByRole('button', { name: 'Add Menu Item' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. Chicken Fried Rice' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. Chicken Fried Rice' }).fill('Spicy Fish Curry');
+    // await page1.getByRole('textbox', { name: 'e.g. CHK FR RICE' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. CHK FR RICE' }).fill('SPCY FSH CURRY');
+    // await page1.getByRole('textbox', { name: 'e.g. CFR001' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. CFR001' }).fill('MI-0002');
+    // await page1.getByRole('combobox').filter({ hasText: /^Select category$/ }).click();
+    // await page1.getByLabel('[Food]Curries').getByText('[Food]Curries').click();
+    // await page1.getByRole('combobox').filter({ hasText: 'Select sub category' }).click();
+    // await page1.getByLabel('Fish curries').getByText('Fish curries').click();
+    // await page1.getByPlaceholder('e.g. 15').click();
+    // await page1.getByPlaceholder('e.g. 15').fill('15');
+    // await page1.getByRole('textbox', { name: 'Enter item description' }).click();
+    // await page1.getByRole('textbox', { name: 'Enter item description' }).fill('Spicy and flavorful fish curry with a perfect balance of spices.');
+    // await page1.getByRole('button', { name: 'Add Item' }).click();
+    // await page1.waitForTimeout(2000);
+
+    // // ---- Sixth menu items -----
+
+    // await page1.getByRole('button', { name: 'Add Menu Item' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. Chicken Fried Rice' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. Chicken Fried Rice' }).fill('Spicy Fish Curry');
+    // await page1.getByRole('textbox', { name: 'e.g. CHK FR RICE' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. CHK FR RICE' }).fill('SPCY FSH CURRY');
+    // await page1.getByRole('textbox', { name: 'e.g. CFR001' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. CFR001' }).fill('MI-0002');
+    // await page1.getByRole('combobox').filter({ hasText: /^Select category$/ }).click();
+    // await page1.getByLabel('[Food]Curries').getByText('[Food]Curries').click();
+    // await page1.getByRole('combobox').filter({ hasText: 'Select sub category' }).click();
+    // await page1.getByLabel('Fish curries').getByText('Fish curries').click();
+    // await page1.getByPlaceholder('e.g. 15').click();
+    // await page1.getByPlaceholder('e.g. 15').fill('15');
+    // await page1.getByRole('textbox', { name: 'Enter item description' }).click();
+    // await page1.getByRole('textbox', { name: 'Enter item description' }).fill('Spicy and flavorful fish curry with a perfect balance of spices.');
+    // await page1.getByRole('button', { name: 'Add Item' }).click();
+    // await page1.waitForTimeout(2000);
+
+    // // ---- Seventh menu items -----
+
+    // await page1.getByRole('button', { name: 'Add Menu Item' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. Chicken Fried Rice' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. Chicken Fried Rice' }).fill('Spicy Fish Curry');
+    // await page1.getByRole('textbox', { name: 'e.g. CHK FR RICE' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. CHK FR RICE' }).fill('SPCY FSH CURRY');
+    // await page1.getByRole('textbox', { name: 'e.g. CFR001' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. CFR001' }).fill('MI-0002');
+    // await page1.getByRole('combobox').filter({ hasText: /^Select category$/ }).click();
+    // await page1.getByLabel('[Food]Curries').getByText('[Food]Curries').click();
+    // await page1.getByRole('combobox').filter({ hasText: 'Select sub category' }).click();
+    // await page1.getByLabel('Fish curries').getByText('Fish curries').click();
+    // await page1.getByPlaceholder('e.g. 15').click();
+    // await page1.getByPlaceholder('e.g. 15').fill('15');
+    // await page1.getByRole('textbox', { name: 'Enter item description' }).click();
+    // await page1.getByRole('textbox', { name: 'Enter item description' }).fill('Spicy and flavorful fish curry with a perfect balance of spices.');
+    // await page1.getByRole('button', { name: 'Add Item' }).click();
+    // await page1.waitForTimeout(2000);
+
+    // // ---- Eighth menu items -----
+
+    // await page1.getByRole('button', { name: 'Add Menu Item' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. Chicken Fried Rice' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. Chicken Fried Rice' }).fill('Spicy Fish Curry');
+    // await page1.getByRole('textbox', { name: 'e.g. CHK FR RICE' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. CHK FR RICE' }).fill('SPCY FSH CURRY');
+    // await page1.getByRole('textbox', { name: 'e.g. CFR001' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. CFR001' }).fill('MI-0002');
+    // await page1.getByRole('combobox').filter({ hasText: /^Select category$/ }).click();
+    // await page1.getByLabel('[Food]Curries').getByText('[Food]Curries').click();
+    // await page1.getByRole('combobox').filter({ hasText: 'Select sub category' }).click();
+    // await page1.getByLabel('Fish curries').getByText('Fish curries').click();
+    // await page1.getByPlaceholder('e.g. 15').click();
+    // await page1.getByPlaceholder('e.g. 15').fill('15');
+    // await page1.getByRole('textbox', { name: 'Enter item description' }).click();
+    // await page1.getByRole('textbox', { name: 'Enter item description' }).fill('Spicy and flavorful fish curry with a perfect balance of spices.');
+    // await page1.getByRole('button', { name: 'Add Item' }).click();
+    // await page1.waitForTimeout(2000);
+
+    // // ---- Ninth menu items -----
+
+    // await page1.getByRole('button', { name: 'Add Menu Item' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. Chicken Fried Rice' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. Chicken Fried Rice' }).fill('Spicy Fish Curry');
+    // await page1.getByRole('textbox', { name: 'e.g. CHK FR RICE' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. CHK FR RICE' }).fill('SPCY FSH CURRY');
+    // await page1.getByRole('textbox', { name: 'e.g. CFR001' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. CFR001' }).fill('MI-0002');
+    // await page1.getByRole('combobox').filter({ hasText: /^Select category$/ }).click();
+    // await page1.getByLabel('[Food]Curries').getByText('[Food]Curries').click();
+    // await page1.getByRole('combobox').filter({ hasText: 'Select sub category' }).click();
+    // await page1.getByLabel('Fish curries').getByText('Fish curries').click();
+    // await page1.getByPlaceholder('e.g. 15').click();
+    // await page1.getByPlaceholder('e.g. 15').fill('15');
+    // await page1.getByRole('textbox', { name: 'Enter item description' }).click();
+    // await page1.getByRole('textbox', { name: 'Enter item description' }).fill('Spicy and flavorful fish curry with a perfect balance of spices.');
+    // await page1.getByRole('button', { name: 'Add Item' }).click();
+    // await page1.waitForTimeout(2000);
+
+    // // ---- Tenth menu items -----
+
+    // await page1.getByRole('button', { name: 'Add Menu Item' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. Chicken Fried Rice' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. Chicken Fried Rice' }).fill('Spicy Fish Curry');
+    // await page1.getByRole('textbox', { name: 'e.g. CHK FR RICE' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. CHK FR RICE' }).fill('SPCY FSH CURRY');
+    // await page1.getByRole('textbox', { name: 'e.g. CFR001' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. CFR001' }).fill('MI-0002');
+    // await page1.getByRole('combobox').filter({ hasText: /^Select category$/ }).click();
+    // await page1.getByLabel('[Food]Curries').getByText('[Food]Curries').click();
+    // await page1.getByRole('combobox').filter({ hasText: 'Select sub category' }).click();
+    // await page1.getByLabel('Fish curries').getByText('Fish curries').click();
+    // await page1.getByPlaceholder('e.g. 15').click();
+    // await page1.getByPlaceholder('e.g. 15').fill('15');
+    // await page1.getByRole('textbox', { name: 'Enter item description' }).click();
+    // await page1.getByRole('textbox', { name: 'Enter item description' }).fill('Spicy and flavorful fish curry with a perfect balance of spices.');
+    // await page1.getByRole('button', { name: 'Add Item' }).click();
+    // await page1.waitForTimeout(2000);
+
+    // // ---- Eleventh menu items -----
+
+    // await page1.getByRole('button', { name: 'Add Menu Item' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. Chicken Fried Rice' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. Chicken Fried Rice' }).fill('Spicy Fish Curry');
+    // await page1.getByRole('textbox', { name: 'e.g. CHK FR RICE' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. CHK FR RICE' }).fill('SPCY FSH CURRY');
+    // await page1.getByRole('textbox', { name: 'e.g. CFR001' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. CFR001' }).fill('MI-0002');
+    // await page1.getByRole('combobox').filter({ hasText: /^Select category$/ }).click();
+    // await page1.getByLabel('[Food]Curries').getByText('[Food]Curries').click();
+    // await page1.getByRole('combobox').filter({ hasText: 'Select sub category' }).click();
+    // await page1.getByLabel('Fish curries').getByText('Fish curries').click();
+    // await page1.getByPlaceholder('e.g. 15').click();
+    // await page1.getByPlaceholder('e.g. 15').fill('15');
+    // await page1.getByRole('textbox', { name: 'Enter item description' }).click();
+    // await page1.getByRole('textbox', { name: 'Enter item description' }).fill('Spicy and flavorful fish curry with a perfect balance of spices.');
+    // await page1.getByRole('button', { name: 'Add Item' }).click();
+    // await page1.waitForTimeout(2000); 
+
+    // // ---- Twelfth menu items -----
+
+    // await page1.getByRole('button', { name: 'Add Menu Item' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. Chicken Fried Rice' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. Chicken Fried Rice' }).fill('Spicy Fish Curry');
+    // await page1.getByRole('textbox', { name: 'e.g. CHK FR RICE' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. CHK FR RICE' }).fill('SPCY FSH CURRY');
+    // await page1.getByRole('textbox', { name: 'e.g. CFR001' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. CFR001' }).fill('MI-0002');
+    // await page1.getByRole('combobox').filter({ hasText: /^Select category$/ }).click();
+    // await page1.getByLabel('[Food]Curries').getByText('[Food]Curries').click();
+    // await page1.getByRole('combobox').filter({ hasText: 'Select sub category' }).click();
+    // await page1.getByLabel('Fish curries').getByText('Fish curries').click();
+    // await page1.getByPlaceholder('e.g. 15').click();
+    // await page1.getByPlaceholder('e.g. 15').fill('15');
+    // await page1.getByRole('textbox', { name: 'Enter item description' }).click();
+    // await page1.getByRole('textbox', { name: 'Enter item description' }).fill('Spicy and flavorful fish curry with a perfect balance of spices.');
+    // await page1.getByRole('button', { name: 'Add Item' }).click();
+    // await page1.waitForTimeout(2000);
             
 
 });

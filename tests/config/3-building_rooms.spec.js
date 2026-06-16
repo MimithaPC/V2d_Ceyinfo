@@ -157,4 +157,167 @@ test('test', async ({ page }) => {
     await page.getByRole('button', { name: 'Save' }).click();
     await page.waitForTimeout(3000);
 
+    
+    
+    
+    
+    
+    
+    
+    
+    // //  Production
+
+    // await page.goto('https://ceyinfo.com/', { waitUntil: 'networkidle' });
+    // const page1Promise = page.waitForEvent('popup');
+    // await page.getByRole('link', { name: 'Login' }).click();
+    // const page1 = await page1Promise;
+    // await page1.getByRole('textbox', { name: 'Email' }).click();
+    // await page1.getByRole('textbox', { name: 'Email' }).fill('mimithaprabodani@gmail.com');
+    // await page1.getByRole('textbox', { name: '********' }).click();
+    // await page1.getByRole('textbox', { name: '********' }).fill('Mi@123');
+    // await page1.getByRole('button', { name: 'Login' }).click();
+    // await page1.waitForTimeout(2000);
+    // // await page1.locator('div:nth-child(14) > .inline-flex').click();
+    // // await page1.getByRole('button', { name: 'Manage Property' }).nth(2).click();
+    // await page1.waitForTimeout(2000);
+    // // await page1.getByRole('button', { name: 'Manage Property' }).first().click();
+    // await page1.getByRole('button', { name: 'Configuration System settings' }).click();
+    // await page1.getByRole('button', { name: 'Property and Rooms' }).click();
+    // await page1.getByRole('button', { name: 'Setup' }).click();
+    // await page1.getByRole('link', { name: 'Rooms' }).click();
+    // await page1.getByRole('button', { name: 'Close Sidebar' }).click();
+
+    // // Add first building
+
+    // await page1.getByRole('button', { name: 'Add New Room' }).click();
+    // await page1.getByRole('button', { name: 'New Building' }).click();
+    // await page1.getByRole('textbox', { name: 'Enter building name' }).fill('Main buliding');
+    // await page1.getByRole('button', { name: 'Create' }).click();
+    // await page1.getByText('Main buliding0 floors0 rooms').click();
+
+    // // Add first floor
+
+    // await page1.getByRole('button', { name: 'New Floor' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. Ground Floor' }).fill('Ground floor');
+    // await page1.getByPlaceholder('e.g. 0 for Ground, 1, 2,').click();
+    // await page1.getByPlaceholder('e.g. 0 for Ground, 1, 2,').fill('0');
+    // await page1.getByRole('button', { name: 'Create' }).click();
+    // await page1.getByText('Ground floorOrientation: NORTHLevel: 0Rooms:').click();
+    // await page1.getByRole('button', { name: 'Add First Block' }).click();
+    // await page1.getByRole('button', { name: 'Add Segment' }).click();
+    // await page1.getByRole('button', { name: 'Add Unit Line', exact: true }).click();
+    // await page1.locator('button').filter({ hasText: 'Add Unit' }).click();
+    // await page1.getByText('Segment (Vertical)1 lines').click();
+    // await page1.locator('select').selectOption('Horizontal');
+
+    // // Add first room
+
+    // await page1.locator('div').filter({ hasText: /^ROOM$/ }).nth(1).click();
+    // await page1.getByRole('textbox', { name: 'e.g., 301,' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g., 301,' }).fill('100');
+    // await page1.getByRole('combobox').filter({ hasText: 'Select room category' }).click();
+    // await page1.getByText('Standard').click();
+    // await page1.getByRole('combobox').filter({ hasText: 'Select room type' }).click();
+    // await page1.getByRole('option', { name: 'Single' }).click();
+    // await page1.getByRole('combobox').filter({ hasText: 'Select room view' }).click();
+    // await page1.getByText('default view').click();
+    // // await page1.getByText('Sea View').click();
+    // await page1.getByPlaceholder('e.g., 35.5').click();
+    // await page1.getByPlaceholder('e.g., 35.5').fill('100');
+
+    // // Add second room
+
+    // await page1.getByRole('button', { name: 'Add Unit', exact: true }).click();
+    // await page1.getByRole('textbox', { name: 'e.g., 301,' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g., 301,' }).fill('200');
+    // await page1.getByRole('combobox').filter({ hasText: 'Select room category' }).click();
+    // await page1.getByText('Standard').click();
+    // await page1.getByRole('combobox').filter({ hasText: 'Select room type' }).click();
+    // await page1.getByRole('option', { name: 'Single' }).click();
+    // await page1.getByRole('combobox').filter({ hasText: 'Select room view' }).click();
+    // await page1.getByText('default view').click();
+    // // await page1.getByText('Sea View').click();
+    // await page1.getByPlaceholder('e.g., 35.5').click();
+    // await page1.getByPlaceholder('e.g., 35.5').fill('100.5');
+
+    // // Add third room
+
+    // await page1.getByRole('button', { name: 'Add Unit', exact: true }).click();
+    // await page1.getByRole('textbox', { name: 'e.g., 301,' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g., 301,' }).fill('300');
+    // await page1.getByRole('combobox').filter({ hasText: 'Select room category' }).click();
+    // await page1.getByText('Deluxe').click();
+    // await page1.getByRole('combobox').filter({ hasText: 'Select room type' }).click();
+    // await page1.getByRole('option', { name: 'Single' }).click();
+    // await page1.getByRole('combobox').filter({ hasText: 'Select room view' }).click();
+    // await page1.getByText('default view').click();
+    // // await page1.getByText('Sea View').click();
+    // await page1.getByPlaceholder('e.g., 35.5').click();
+    // await page1.getByPlaceholder('e.g., 35.5').fill('101.5');
+    // await page1.getByRole('button', { name: 'Save' }).click();
+
+    // // Add second floor
+
+    // await page1.getByRole('button').filter({ hasText: /^$/ }).nth(3).click();
+    // await page1.getByRole('button', { name: 'New Floor' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g. Ground Floor' }).fill('First floor');
+    // await page1.getByPlaceholder('e.g. 0 for Ground, 1, 2,').click();
+    // await page1.getByPlaceholder('e.g. 0 for Ground, 1, 2,').fill('1');
+    // await page1.getByRole('button', { name: 'Create' }).click();
+    // await page1.getByText('First floorOrientation: NORTHLevel: 1Rooms:').click();
+    // await page1.getByRole('button', { name: 'Add First Block' }).click();
+    // await page1.getByRole('button', { name: 'Add Segment' }).click();
+    // await page1.getByRole('button', { name: 'Add Unit Line', exact: true }).click();
+    // await page1.locator('button').filter({ hasText: 'Add Unit' }).click();
+    // await page1.getByText('lines').click();
+    // await page1.locator('select').selectOption('Horizontal');
+
+    // // Add first room
+
+    // await page1.locator('div').filter({ hasText: /^ROOM$/ }).nth(1).click();
+    // await page1.getByRole('textbox', { name: 'e.g., 301,' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g., 301,' }).fill('400');
+    // await page1.getByRole('combobox').filter({ hasText: 'Select room category' }).click();
+    // await page1.getByText('Standard').click();
+    // await page1.getByRole('combobox').filter({ hasText: 'Select room type' }).click();
+    // await page1.getByRole('option', { name: 'Double/Twin' }).click();
+    // await page1.getByRole('combobox').filter({ hasText: 'Select room view' }).click();
+    // await page1.getByText('default view').click();
+    // // await page1.getByText('Sea View').click();
+    // await page1.getByPlaceholder('e.g., 35.5').click();
+    // await page1.getByPlaceholder('e.g., 35.5').fill('100');
+
+    // // Add second room
+
+    // await page1.getByRole('button', { name: 'Add Unit', exact: true }).click();
+    // await page1.getByRole('textbox', { name: 'e.g., 301,' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g., 301,' }).fill('500');
+    // await page1.getByRole('combobox').filter({ hasText: 'Select room category' }).click();
+    // await page1.getByText('Standard').click();
+    // await page1.getByRole('combobox').filter({ hasText: 'Select room type' }).click();
+    // await page1.getByRole('option', { name: 'Double/Twin' }).click();
+    // await page1.getByRole('combobox').filter({ hasText: 'Select room view' }).click();
+    // await page1.getByText('default view').click();
+    // // await page1.getByText('Sea View').click();
+    // await page1.getByPlaceholder('e.g., 35.5').click();
+    // await page1.getByPlaceholder('e.g., 35.5').fill('100');
+
+    // // Add second room
+
+    // await page1.getByRole('button', { name: 'Add Unit', exact: true }).click();
+    // await page1.locator('div').filter({ hasText: /^ROOM$/ }).click();
+    // await page1.getByRole('textbox', { name: 'e.g., 301,' }).click();
+    // await page1.getByRole('textbox', { name: 'e.g., 301,' }).fill('600');
+    // await page1.getByRole('combobox').filter({ hasText: 'Select room category' }).click();
+    // await page1.getByText('Deluxe').click();
+    // await page1.getByRole('combobox').filter({ hasText: 'Select room type' }).click();
+    // await page1.getByRole('option', { name: 'Double/Twin' }).click();
+    // await page1.getByRole('combobox').filter({ hasText: 'Select room view' }).click();
+    // await page1.getByText('default view').click();
+    // // await page1.getByText('Sea View').click();
+    // await page1.getByPlaceholder('e.g., 35.5').click();
+    // await page1.getByPlaceholder('e.g., 35.5').fill('101');
+    // await page1.getByRole('button', { name: 'Save' }).click();
+    // await page1.waitForTimeout(3000);
+
 });

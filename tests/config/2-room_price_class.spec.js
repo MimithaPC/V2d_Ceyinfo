@@ -23,6 +23,7 @@ test('test', async ({ page }) => {
     await page.getByRole('button', { name: 'Setup' }).click();
     await page.getByRole('link', { name: 'Room Price Class' }).click();
     await page.getByRole('button', { name: 'Close Sidebar' }).click();
+    await page.getByRole('button', { name: 'Add Price Class' }).click();
 
     // ----- Set not applicable -----
 
@@ -33,5 +34,47 @@ test('test', async ({ page }) => {
 
     // await page.getByRole('button', { name: 'Create 12 Room Classes' }).click();
     // await page.waitForTimeout(3000);
+
+    
+    
+    
+    
+    
+    
+    
+    
+    // //  Production
+
+    // await page.goto('https://ceyinfo.com/', { waitUntil: 'networkidle' });
+    // const page1Promise = page.waitForEvent('popup');
+    // await page.getByRole('link', { name: 'Login' }).click();
+    // const page1 = await page1Promise;
+    // await page1.getByRole('textbox', { name: 'Email' }).click();
+    // await page1.getByRole('textbox', { name: 'Email' }).fill('mimithaprabodani@gmail.com');
+    // await page1.getByRole('textbox', { name: '********' }).click();
+    // await page1.getByRole('textbox', { name: '********' }).fill('Mi@123');
+    // await page1.getByRole('button', { name: 'Login' }).click();
+    // await page1.waitForTimeout(2000);
+    // // await page1.locator('div:nth-child(14) > .inline-flex').click();
+    // // await page1.getByRole('button', { name: 'Manage Property' }).nth(2).click();
+    // await page1.waitForTimeout(2000);
+    // // await page1.getByRole('button', { name: 'Manage Property' }).first().click();
+    // await page1.getByRole('button', { name: 'Configuration System settings' }).click();
+    // await page1.getByRole('button', { name: 'Property and Rooms' }).click();
+    // await page1.getByRole('button', { name: 'Setup' }).click();
+    // await page1.getByRole('link', { name: 'Room Price Class' }).click();
+    // await page1.getByRole('button', { name: 'Close Sidebar' }).click();
+    // await page.getByRole('button', { name: 'Add Price Class' }).click();
+
+    // // ----- Set not applicable -----
+
+    // await page1.getByRole('button', { name: 'Create 4 Room Classes' }).click();
+    // await page1.waitForTimeout(3000);
+
+    // // // ----- No set not applicable -----
+
+    // // await page1.getByRole('button', { name: 'Create 12 Room Classes' }).click();
+    // // await page1.waitForTimeout(3000);
+
 
 });

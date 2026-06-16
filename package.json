@@ -7,7 +7,7 @@
 
         "property": "playwright test tests/property_create.spec.js --headed --workers=1 --project=chromium",
         "employees": "playwright test tests/hr/employees.spec.js --headed --workers=1 --project=chromium",
-        "users": "playwright test tests/user management/new_user.spec.js --headed --workers=1 --project=chromium",
+        "users": "playwright test tests/user_managment/1-new_user.spec.js --headed --workers=1 --project=chromium",
         
         "propertysetup": "npm run property && npm run employees && npm run users",
 
@@ -43,7 +43,7 @@
         "preparationlocation": "playwright test tests/config/15-meal_preparation_location.spec.js --headed --workers=1 --project=chromium",
         "itemmapping": "playwright test tests/config/16-meal_preparation_location_and_items_mapping.spec.js --headed --workers=1 --project=chromium",
         "locationmapping": "playwright test tests/config/17-pos_and_meal_location_mapping.spec.js --headed --workers=1 --project=chromium",
-        "posuser": "playwright test tests/user management/pos_user.spec.js --headed --workers=1 --project=chromium",
+        "posuser": "playwright test tests/user_managment/2-pos_user.spec.js --headed --workers=1 --project=chromium",
 
         "possetup": "npm run menutype && npm run pricetype && npm run pricetier && npm run menucategory && npm run menuitem && npm run itemprice && npm run location && npm run locationtable && npm run preparationlocation && npm run itemmapping && npm run locationmapping && npm run posuser"
 

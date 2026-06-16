@@ -50,26 +50,30 @@ test('test', async ({ page }) => {
     // await page1.getByRole('textbox', { name: '********' }).click();
     // await page1.getByRole('textbox', { name: '********' }).fill('Mi@123');
     // await page1.getByRole('button', { name: 'Login' }).click();
-    // await page.waitForTimeout(2000);
-    // // await page1.locator('div:nth-child(12) > .inline-flex').click(); //Change
+    // await page1.waitForTimeout(2000);
+    // // await page1.locator('div:nth-child(14) > .inline-flex').click();
     // // await page1.getByRole('button', { name: 'Manage Property' }).nth(2).click();
-    // await page1.getByRole('button', { name: 'Manage Property' }).click();
-    // // await page1.getByRole('button', { name: 'Configuration System settings' }).click();
+    // await page1.waitForTimeout(2000);
+    // // await page1.getByRole('button', { name: 'Manage Property' }).first().click();
+    // await page1.getByRole('button', { name: 'Configuration System settings' }).click();
+    // await page1.getByRole('button', { name: 'Property and Rooms' }).click();
     // await page1.getByRole('link', { name: 'Offers' }).click();
+    // await page1.getByRole('button', { name: 'Close Sidebar' }).click();
+
+    // // ----- Add first offer -----
+
     // await page1.getByRole('button', { name: 'Add Offer' }).click();
     // await page1.getByRole('textbox', { name: 'Enter the offer name' }).click();
     // await page1.getByRole('textbox', { name: 'Enter the offer name' }).fill('Summer offer');
     // await page1.getByRole('textbox', { name: 'e.g.' }).click();
     // await page1.getByRole('textbox', { name: 'e.g.' }).fill('10');
-    // await page1.locator('input[name="startdate"]').fill('2026-05-12');
-    // await page1.locator('input[name="enddate"]').fill('2026-05-15');
+    // await page1.locator('input[name="startdate"]').fill('2026-06-20');
+    // await page1.locator('input[name="enddate"]').fill('2026-06-28');
     // await page1.getByRole('textbox', { name: 'Promotion Code *' }).click();
     // await page1.getByRole('textbox', { name: 'Promotion Code *' }).fill('201');
     // await page1.getByRole('textbox', { name: 'Description *' }).click();
     // await page1.getByRole('textbox', { name: 'Description *' }).fill('Summer');
     // await page1.getByRole('button', { name: 'Submit Offer' }).click();
-    // await page1.waitForTimeout(4000);
-
-
+    // await page1.waitForTimeout(3000);
 
 });
