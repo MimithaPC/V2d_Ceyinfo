@@ -123,4 +123,136 @@ test('test', async ({ page }) => {
     await page.getByRole('button', { name: 'Save Service' }).click();
     await page.waitForTimeout(3000);
 
+
+
+
+
+
+
+
+
+    // //  Production
+
+    // await page.goto('https://ceyinfo.com/', { waitUntil: 'networkidle' });
+    // const page1Promise = page.waitForEvent('popup');
+    // await page.getByRole('link', { name: 'Login' }).click();
+    // const page1 = await page1Promise;
+    // await page1.getByRole('textbox', { name: 'Email' }).click();
+    // await page1.getByRole('textbox', { name: 'Email' }).fill('mimithaprabodani@gmail.com');
+    // await page1.getByRole('textbox', { name: '********' }).click();
+    // await page1.getByRole('textbox', { name: '********' }).fill('Mi@123');
+    // await page1.getByRole('button', { name: 'Login' }).click();
+    // await page1.waitForTimeout(2000);
+    // // await page1.locator('div:nth-child(14) > .inline-flex').click();
+    // // await page1.getByRole('button', { name: 'Manage Property' }).nth(2).click();
+    // await page1.waitForTimeout(2000);
+    // // await page1.getByRole('button', { name: 'Manage Property' }).first().click();
+    // await page1.getByRole('button', { name: 'Front Desk Reservations,' }).click();
+    // await page1.getByRole('button', { name: 'Extras' }).click();
+    // await page1.getByRole('button', { name: 'Guest Services' }).click();
+    // await page1.getByRole('button', { name: 'Close Sidebar' }).click();
+
+    // // ----- Add first guest service -----
+
+    // await page1.getByRole('button', { name: 'Add Service' }).click();
+    // await page1.getByRole('textbox', { name: 'Service Name *' }).click();
+    // await page1.getByRole('textbox', { name: 'Service Name *' }).fill('Laundry Service');
+    // await page1.getByRole('textbox', { name: 'Description' }).click();
+    // await page1.getByRole('textbox', { name: 'Description' }).fill('Washing and ironing of guest clothes.');
+    // await page1.getByRole('button', { name: 'Save Service' }).click();
+    // await page1.waitForTimeout(1000);
+
+    // // ----- Add second guest service -----
+
+    // await page1.getByRole('button', { name: 'Add Service' }).click();
+    // await page1.getByRole('textbox', { name: 'Service Name *' }).click();
+    // await page1.getByRole('textbox', { name: 'Service Name *' }).fill('Room Service');
+    // await page1.getByRole('textbox', { name: 'Description' }).click();
+    // await page1.getByRole('textbox', { name: 'Description' }).fill('Food and beverages delivered to rooms.');
+    // await page1.getByRole('button', { name: 'Save Service' }).click();
+    // await page1.waitForTimeout(1000);
+
+    // // ----- Add third guest service -----
+
+    // await page1.getByRole('button', { name: 'Add Service' }).click();
+    // await page1.getByRole('textbox', { name: 'Service Name *' }).click();
+    // await page1.getByRole('textbox', { name: 'Service Name *' }).fill('Airport Transfer');
+    // await page1.getByRole('textbox', { name: 'Description' }).click();
+    // await page1.getByRole('textbox', { name: 'Description' }).fill('Transportation between hotel and airport.');
+    // await page1.getByRole('button', { name: 'Save Service' }).click();
+    // await page1.waitForTimeout(1000);
+
+    // // ----- Add fourth guest service -----
+
+    // await page1.getByRole('button', { name: 'Add Service' }).click();
+    // await page1.getByRole('textbox', { name: 'Service Name *' }).click();
+    // await page1.getByRole('textbox', { name: 'Service Name *' }).fill('Extra Bed Service');
+    // await page1.getByRole('textbox', { name: 'Description' }).click();
+    // await page1.getByRole('textbox', { name: 'Description' }).fill('Additional bed provided on request.');
+    // await page1.getByRole('button', { name: 'Save Service' }).click();
+    // await page1.waitForTimeout(1000);
+
+    // // ----- Add fifth guest service -----
+
+    // await page1.getByRole('button', { name: 'Add Service' }).click();
+    // await page1.getByRole('textbox', { name: 'Service Name *' }).click();
+    // await page1.getByRole('textbox', { name: 'Service Name *' }).fill('Spa Service');
+    // await page1.getByRole('textbox', { name: 'Description' }).click();
+    // await page1.getByRole('textbox', { name: 'Description' }).fill('Relaxing wellness and massage treatments.');
+    // await page1.getByRole('button', { name: 'Save Service' }).click();
+    // await page1.waitForTimeout(1000);
+
+    // // ----- Add sixth guest service -----
+
+    // await page1.getByRole('button', { name: 'Add Service' }).click();
+    // await page1.getByRole('textbox', { name: 'Service Name *' }).click();
+    // await page1.getByRole('textbox', { name: 'Service Name *' }).fill('Taxi Service');
+    // await page1.getByRole('textbox', { name: 'Description' }).click();
+    // await page1.getByRole('textbox', { name: 'Description' }).fill('Taxi booking for guest transportation.');
+    // await page1.getByRole('button', { name: 'Save Service' }).click();
+    // await page1.waitForTimeout(1000);
+
+    // // ----- Add seventh guest service -----
+
+    // await page1.getByRole('button', { name: 'Add Service' }).click();
+    // await page1.getByRole('textbox', { name: 'Service Name *' }).click();
+    // await page1.getByRole('textbox', { name: 'Service Name *' }).fill('Pet Care Service');
+    // await page1.getByRole('textbox', { name: 'Description' }).click();
+    // await page1.getByRole('textbox', { name: 'Description' }).fill('Care and assistance for guest pets.');
+    // await page1.getByRole('button', { name: 'Save Service' }).click();
+    // await page1.waitForTimeout(1000);
+
+    // // ----- Add eighth guest service -----
+
+    // await page1.getByRole('button', { name: 'Add Service' }).click();
+    // await page1.getByRole('textbox', { name: 'Service Name *' }).click();
+    // await page1.getByRole('textbox', { name: 'Service Name *' }).fill('Packed Meal Service');
+    // await page1.getByRole('textbox', { name: 'Description' }).click();
+    // await page1.getByRole('textbox', { name: 'Description' }).fill('Meals packed for travel or tours.');
+    // await page1.getByRole('button', { name: 'Save Service' }).click();
+    // await page1.waitForTimeout(1000);
+
+    // // ----- Add ninth guest service -----
+
+    // await page1.getByRole('button', { name: 'Add Service' }).click();
+    // await page1.getByRole('textbox', { name: 'Service Name *' }).click();
+    // await page1.getByRole('textbox', { name: 'Service Name *' }).fill('Mini Bar Service');
+    // await page1.getByRole('textbox', { name: 'Description' }).click();
+    // await page1.getByRole('textbox', { name: 'Description' }).fill('Snacks and drinks available in room.');
+    // await page1.getByRole('button', { name: 'Save Service' }).click();
+    // await page1.waitForTimeout(1000);
+
+    // // ----- Add tenth guest service -----
+
+    // await page1.getByRole('button', { name: 'Add Service' }).click();
+    // await page1.getByRole('textbox', { name: 'Service Name *' }).click();
+    // await page1.getByRole('textbox', { name: 'Service Name *' }).fill('Ironing Service');
+    // await page1.getByRole('textbox', { name: 'Description' }).click();
+    // await page1.getByRole('textbox', { name: 'Description' }).fill('Professional ironing of clothes.');
+    // await page1.getByRole('button', { name: 'Save Service' }).click();
+    // await page1.waitForTimeout(3000);
+
+
+
+
 });
