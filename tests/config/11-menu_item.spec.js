@@ -3,7 +3,7 @@ import path from 'path';
 
 test('test', async ({ page }) => {
 
-    test.setTimeout(500000);
+    test.setTimeout(700000);
 
     // Development
 
@@ -54,8 +54,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Chilled classic cola');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Coca Cola.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
     
@@ -76,8 +75,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Refreshing lemon-lime drink');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Sprite.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -98,8 +96,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Chilled tea with lemon');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Iced Lemon Tea.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -120,8 +117,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Cold coffee with milk');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Iced Coffee.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -142,8 +138,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Pure bottled water');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Mineral Water.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -164,8 +159,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Sparkling soda water');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Soda Water.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -188,8 +182,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Fresh brewed Ceylon tea');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Ceylon Tea.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -210,8 +203,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Hot tea infused with ginger');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Ginger Tea.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -232,8 +224,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Espresso with steamed milk');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Cappuccino.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -254,8 +245,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Smooth coffee with milk');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Café Latte.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -278,8 +268,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Fresh squeezed orange juice');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Orange Juice.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000); 
 
@@ -300,8 +289,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Fresh watermelon blend');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Watermelon Juice.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -322,8 +310,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Cucumber and apple juice');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Green Detox Juice.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
     
@@ -344,8 +331,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Fresh carrot health drink');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Carrot Boost Juice.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -368,8 +354,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Light chicken broth');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Chicken Clear Soup.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -390,8 +375,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Fresh vegetable broth');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Vegetable Clear Soup.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -412,8 +396,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Rich creamy chicken soup');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Cream of Chicken.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -434,8 +417,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Creamy mushroom soup');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Cream of Mushroom.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -458,8 +440,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Fried squid rings');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Crispy Calamari.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -480,8 +461,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Prawns in garlic butter');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Garlic Butter Prawns.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -502,8 +482,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Spicy fried chicken wings');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Chicken Wings.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -524,8 +503,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Grilled chicken skewers');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Chicken Satay.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -546,8 +524,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Crispy vegetable rolls');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Vegetable Spring Rolls.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000); 
 
@@ -568,8 +545,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Grilled cottage cheese cubes');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Paneer Tikka.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -592,8 +568,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Chopped roti with chicken');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Chicken Kottu.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
     
@@ -614,8 +589,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Kottu with melted cheese ');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Cheese Kottu.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -636,8 +610,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Spicy stir-fried prawns');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Devilled Prawns.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -658,8 +631,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Prawns in garlic butter sauce');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Butter Garlic Prawns.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -680,8 +652,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Herb grilled fish fillet');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Grilled Fish.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -702,12 +673,11 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Spicy devilled fish');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Devilled Fish.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
-    // ---- 7 -----            |           |    |   |  
+    // ---- 7 -----        
 
     await page.getByRole('button', { name: 'Add Menu Item' }).click();
     await page.getByRole('textbox', { name: 'e.g. Chicken Fried Rice' }).click();
@@ -724,8 +694,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Traditional chicken curry');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Chicken Curry.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -746,8 +715,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Herb-marinated grilled chicken');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Grilled Chicken.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -768,8 +736,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Creamy chicken pasta ');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Chicken Alfredo Pasta.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -790,8 +757,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Pasta with mixed seafood');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Seafood Pasta.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -812,8 +778,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Fried rice with chicken');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Chicken Fried Rice.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000); 
 
@@ -834,8 +799,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Fried rice with seafood');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Seafood Fried Rice.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -858,8 +822,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Loaded premium toppings');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Supreme Pizza.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
     
@@ -880,8 +843,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Assorted meat toppings');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Meat Lovers Pizza.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
     
@@ -902,8 +864,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('BBQ chicken and cheese');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('BBQ Chicken Pizza.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -924,8 +885,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Spicy chicken topping');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Spicy Chicken Pizza.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -946,8 +906,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Fresh vegetable toppings');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Veggie Delight Pizza.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -968,8 +927,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Mushroom and cheese pizza');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Mushroom Pizza.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -992,8 +950,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Traditional Sri Lankan dessert');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Watalappam.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -1014,8 +971,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Buffalo curd with treacle');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Curd & Treacle.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -1036,8 +992,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Classic vanilla scoop');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Vanilla Ice Cream.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -1058,8 +1013,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Rich chocolate ice cream');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Chocolate Ice Cream.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 
@@ -1080,12 +1034,11 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Moist chocolate cake slice');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Chocolate Cake.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000); 
 
-    // ---- 6 -----               |  |   |  
+    // ---- 6 -----          
 
     await page.getByRole('button', { name: 'Add Menu Item' }).click();
     await page.getByRole('textbox', { name: 'e.g. Chicken Fried Rice' }).click();
@@ -1102,8 +1055,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('e.g. 15').fill('15');
     await page.getByRole('textbox', { name: 'Enter item description' }).click();
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Creamy baked cheese Cake');
-    await page.setInputFiles('input[type="file"]',imagePath('Caramel Pudding.jpeg'));
-    await page.getByText('Upload').click();
+    await page.setInputFiles('input[type="file"]',imagePath('Cheese Cake.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
     await page.waitForTimeout(1000);
 

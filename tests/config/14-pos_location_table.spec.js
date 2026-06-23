@@ -49,7 +49,7 @@ test('test', async ({ page }) => {
 
     // ---- Add second pos location table ----
 
-    await page.getByRole('combobox').filter({ hasText: 'Select POS Location' }).click();
+    await page.getByRole('combobox').filter({ hasText: 'Bar POS' }).click();
     await page.getByText('Main Restaurant POS').click();
 
     await page.getByRole('button', { name: 'Add Table' }).click();
@@ -72,7 +72,7 @@ test('test', async ({ page }) => {
 
     // ---- Add third pos location table -----
 
-    await page.getByRole('combobox').filter({ hasText: 'Select POS Location' }).click();
+    await page.getByRole('combobox').filter({ hasText: 'Main Restaurant POS' }).click();
     await page.getByText('Coffee Shop POS').click();
 
     await page.getByRole('button', { name: 'Add Table' }).click();
@@ -95,7 +95,7 @@ test('test', async ({ page }) => {
 
     // ---- Add fourth pos location table -----
 
-    await page.getByRole('combobox').filter({ hasText: 'Select POS Location' }).click();
+    await page.getByRole('combobox').filter({ hasText: 'Coffee Shop POS' }).click();
     await page.getByText('Poolside Restaurant POS').click();
 
     await page.getByRole('button', { name: 'Add Table' }).click();
