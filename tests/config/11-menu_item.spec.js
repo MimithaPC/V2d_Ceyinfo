@@ -1057,7 +1057,7 @@ test('test', async ({ page }) => {
     await page.getByRole('textbox', { name: 'Enter item description' }).fill('Creamy baked cheese Cake');
     await page.setInputFiles('input[type="file"]',imagePath('Cheese Cake.jpeg'));
     await page.getByRole('button', { name: 'Add Item' }).click();
-    await page.waitForTimeout(1000);
+    await page.waitForTimeout(3000);
 
     
     
