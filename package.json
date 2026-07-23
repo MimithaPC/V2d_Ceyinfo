@@ -45,7 +45,11 @@
         "locationmapping": "playwright test tests/config/17-pos_and_meal_location_mapping.spec.js --headed --workers=1 --project=chromium",
         "posuser": "playwright test tests/user_managment/2-pos_user.spec.js --headed --workers=1 --project=chromium",
 
-        "possetup": "npm run menutype && npm run pricetype && npm run pricetier && npm run menucategory && npm run menuitem && npm run itemprice && npm run location && npm run locationtable && npm run preparationlocation && npm run itemmapping && npm run locationmapping && npm run posuser"
+        "possetup": "npm run menutype && npm run pricetype && npm run pricetier && npm run menucategory && npm run menuitem && npm run itemprice && npm run location && npm run locationtable && npm run preparationlocation && npm run itemmapping && npm run locationmapping && npm run posuser",
+
+        "adr": "npx playwright test tests/frontdesk/other/check_adr.spec.js --headed --workers=1 --project=chromium",
+
+        "checkadr": "npm run inquiries && npm run advanced && npm run adr"
 
     },
     
