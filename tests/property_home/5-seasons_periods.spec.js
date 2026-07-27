@@ -6,22 +6,17 @@ test('test', async ({ page }) => {
 
     // Development
 
-    await page.goto('https://v2d.ceyinfo.com/', { waitUntil: 'networkidle' });
-    await page.getByRole('link', { name: 'Login' }).click();
-    await page.getByRole('textbox', { name: 'Email' }).click();
-    await page.getByRole('textbox', { name: 'Email' }).fill('mimithaprabodani@gmail.com');
-    await page.getByRole('textbox', { name: '********' }).click();
-    await page.getByRole('textbox', { name: '********' }).fill('Mi@123');
-    await page.getByRole('button', { name: 'Login' }).click();
-    await page.waitForTimeout(2000);
-    // await page.locator('div:nth-child(14) > .inline-flex').click();
-    // await page.getByRole('button', { name: 'Manage Property' }).nth(2).click();
-    await page.waitForTimeout(2000);
-    // await page.getByRole('button', { name: 'Manage Property' }).first().click();
-    await page.getByRole('button', { name: 'Configuration System settings' }).click();
-    await page.getByRole('button', { name: 'Property and Rooms' }).click();
-    await page.getByRole('link', { name: 'Offers' }).click();
-    await page.getByRole('button', { name: 'Close Sidebar' }).click();
+    await page.goto('https://v3.ceyinfo.com/', { waitUntil: 'networkidle' });
+    await page.getByRole('navigation').getByRole('link', { name: 'Sign in' }).click();
+    await page.getByRole('textbox', { name: 'Work email' }).click();
+    await page.getByRole('textbox', { name: 'Work email' }).fill('mimithaprabodani@gmail.com');
+    await page.getByRole('textbox', { name: 'Password' }).click();
+    await page.getByRole('textbox', { name: 'Password' }).fill('123456789');
+    await page.getByRole('button', { name: 'Sign in' }).click();
+    await page.waitForTimeout(2000);   
+    await page.getByRole('button', { name: 'Rooms & Rates ▼' }).click();
+    await page.getByRole('link', { name: 'Rooms' }).click();
+    await page.getByRole('button', { name: 'Collapse sidebar' }).click();
 
     // ----- Add first offer -----
 
