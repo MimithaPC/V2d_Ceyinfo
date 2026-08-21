@@ -12,7 +12,7 @@ test('test', async ({ page }) => {
     await page.getByRole('textbox', { name: 'Work email' }).fill('mimithaprabodani@gmail.com');
     await page.getByRole('textbox', { name: 'Password' }).click();
     await page.getByRole('textbox', { name: 'Password' }).fill('123456789');
-    await page.getByRole('button', { name: 'Sign in' }).click();
+    await page.getByRole('button', { name: 'Sign in', exact: true }).click();
     await page.waitForTimeout(2000);   
     await page.getByRole('button', { name: 'Rooms & Rates ▼' }).click();
     await page.getByRole('link', { name: 'Buildings & Floors' }).click();
@@ -20,17 +20,17 @@ test('test', async ({ page }) => {
 
     await page.getByRole('button', { name: 'Add' }).click();
     await page.getByRole('textbox', { name: 'Name' }).click();
-    await page.getByRole('textbox', { name: 'Name' }).fill('Main building');
+    await page.getByRole('textbox', { name: 'Name' }).fill('Main Building');
     await page.getByRole('button', { name: 'Save' }).click();
     await page.waitForTimeout(1000);
 
     await page.getByRole('button', { name: 'Add floor' }).click();
-    await page.getByRole('textbox', { name: 'Name' }).fill('Ground floor');
+    await page.getByRole('textbox', { name: 'Name' }).fill('Ground Floor');
     await page.getByRole('button', { name: 'Save' }).click();
     await page.waitForTimeout(1000);
 
     await page.getByRole('button', { name: 'Add floor' }).click();
-    await page.getByRole('textbox', { name: 'Name' }).fill('First floor');
+    await page.getByRole('textbox', { name: 'Name' }).fill('First Floor');
     await page.getByRole('button', { name: 'Save' }).click();
     await page.waitForTimeout(2000);
 

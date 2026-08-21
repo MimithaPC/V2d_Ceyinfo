@@ -12,63 +12,47 @@ test('test', async ({ page }) => {
     await page.getByRole('textbox', { name: 'Work email' }).fill('mimithaprabodani@gmail.com');
     await page.getByRole('textbox', { name: 'Password' }).click();
     await page.getByRole('textbox', { name: 'Password' }).fill('123456789');
-    await page.getByRole('button', { name: 'Sign in' }).click();
+    await page.getByRole('button', { name: 'Sign in', exact: true }).click();
     await page.waitForTimeout(2000);   
     await page.getByRole('button', { name: 'Rooms & Rates ▼' }).click();
-    await page.getByRole('link', { name: 'Rooms' }).click();
+    await page.getByRole('link', { name: 'Seasons & Periods' }).click();
     await page.getByRole('button', { name: 'Collapse sidebar' }).click();
 
-    // ----- Add first offer -----
+    await page.getByRole('button', { name: 'Add schedule' }).first().click();
+    await page.getByRole('textbox', { name: 'Name' }).fill('High season - 2026');
+    await page.getByRole('textbox', { name: 'Start date *' }).fill('2026-08-19'); // Change
+    await page.getByRole('textbox', { name: 'End date *' }).fill('2027-01-31'); // Change
+    await page.getByRole('button', { name: 'Create' }).click();
+    await page.waitForTimeout(2000);
 
-    await page.getByRole('button', { name: 'Add Offer' }).click();
-    await page.getByRole('textbox', { name: 'Enter the offer name' }).click();
-    await page.getByRole('textbox', { name: 'Enter the offer name' }).fill('Summer offer');
-    await page.getByRole('textbox', { name: 'e.g.' }).click();
-    await page.getByRole('textbox', { name: 'e.g.' }).fill('10');
-    await page.locator('input[name="startdate"]').fill('2026-06-20');
-    await page.locator('input[name="enddate"]').fill('2026-06-28');
-    await page.getByRole('textbox', { name: 'Promotion Code *' }).click();
-    await page.getByRole('textbox', { name: 'Promotion Code *' }).fill('201');
-    await page.getByRole('textbox', { name: 'Description *' }).click();
-    await page.getByRole('textbox', { name: 'Description *' }).fill('Summer');
-    await page.getByRole('button', { name: 'Submit Offer' }).click();
-    await page.waitForTimeout(3000);
-
+    
+    
+    
+    
+    
+    
+    
+    
     // //  Production
 
-    // await page.goto('https://ceyinfo.com/', { waitUntil: 'networkidle' });
-    // const page1Promise = page.waitForEvent('popup');
-    // await page.getByRole('link', { name: 'Login' }).click();
-    // const page1 = await page1Promise;
-    // await page1.getByRole('textbox', { name: 'Email' }).click();
-    // await page1.getByRole('textbox', { name: 'Email' }).fill('mimithaprabodani@gmail.com');
-    // await page1.getByRole('textbox', { name: '********' }).click();
-    // await page1.getByRole('textbox', { name: '********' }).fill('Mi@123');
-    // await page1.getByRole('button', { name: 'Login' }).click();
-    // await page1.waitForTimeout(2000);
-    // // await page1.locator('div:nth-child(14) > .inline-flex').click();
-    // // await page1.getByRole('button', { name: 'Manage Property' }).nth(2).click();
-    // await page1.waitForTimeout(2000);
-    // // await page1.getByRole('button', { name: 'Manage Property' }).first().click();
-    // await page1.getByRole('button', { name: 'Configuration System settings' }).click();
-    // await page1.getByRole('button', { name: 'Property and Rooms' }).click();
-    // await page1.getByRole('link', { name: 'Offers' }).click();
-    // await page1.getByRole('button', { name: 'Close Sidebar' }).click();
+    // await page.goto('https://hotel-erp.ceyinfo.com/', { waitUntil: 'networkidle' });
+    // await page.getByRole('navigation').getByRole('link', { name: 'Sign in' }).click();
+    // await page.getByRole('textbox', { name: 'Work email' }).click();
+    // await page.getByRole('textbox', { name: 'Work email' }).fill('mimithaprabodani@gmail.com');
+    // await page.getByRole('textbox', { name: 'Password' }).click();
+    // await page.getByRole('textbox', { name: 'Password' }).fill('123456789');
+    // await page.getByRole('button', { name: 'Sign in' }).click();
+    // await page.waitForTimeout(2000);   
+    // await page.getByRole('button', { name: 'Rooms & Rates ▼' }).click();
+    // await page.getByRole('link', { name: 'Seasons & Periods' }).click();
+    // await page.getByRole('button', { name: 'Collapse sidebar' }).click();
 
-    // // ----- Add first offer -----
+    // await page.getByRole('button', { name: 'Add schedule' }).first().click();
+    // await page.getByRole('textbox', { name: 'Name' }).fill('High season - 2026');
+    // await page.getByRole('textbox', { name: 'From' }).fill('2026-08-07'); // Change
+    // await page.getByRole('textbox', { name: 'To' }).fill('2026-12-31');
+    // await page.getByRole('button', { name: 'Create' }).click();
+    // await page.waitForTimeout(2000);
 
-    // await page1.getByRole('button', { name: 'Add Offer' }).click();
-    // await page1.getByRole('textbox', { name: 'Enter the offer name' }).click();
-    // await page1.getByRole('textbox', { name: 'Enter the offer name' }).fill('Summer offer');
-    // await page1.getByRole('textbox', { name: 'e.g.' }).click();
-    // await page1.getByRole('textbox', { name: 'e.g.' }).fill('10');
-    // await page1.locator('input[name="startdate"]').fill('2026-06-20');
-    // await page1.locator('input[name="enddate"]').fill('2026-06-28');
-    // await page1.getByRole('textbox', { name: 'Promotion Code *' }).click();
-    // await page1.getByRole('textbox', { name: 'Promotion Code *' }).fill('201');
-    // await page1.getByRole('textbox', { name: 'Description *' }).click();
-    // await page1.getByRole('textbox', { name: 'Description *' }).fill('Summer');
-    // await page1.getByRole('button', { name: 'Submit Offer' }).click();
-    // await page1.waitForTimeout(3000);
 
 });

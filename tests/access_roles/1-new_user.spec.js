@@ -12,10 +12,10 @@ test('test', async ({ page }) => {
     await page.getByRole('textbox', { name: 'Work email' }).fill('mimithaprabodani@gmail.com');
     await page.getByRole('textbox', { name: 'Password' }).click();
     await page.getByRole('textbox', { name: 'Password' }).fill('123456789');
-    await page.getByRole('button', { name: 'Sign in' }).click();
+    await page.getByRole('button', { name: 'Sign in', exact: true }).click();
     await page.waitForTimeout(2000);
     await page.getByRole('button', { name: 'Switch module' }).click();
-    await page.getByRole('link', { name: 'Access & Roles' }).click();
+    await page.getByRole('link', { name: 'Access & Roles', exact: true }).click();
     await page.getByRole('link', { name: 'Users' }).click();
     await page.getByRole('button', { name: 'Collapse sidebar' }).click();
 
@@ -30,13 +30,15 @@ test('test', async ({ page }) => {
     await page.getByLabel('Property Admin').getByText('Property Admin').click();
     await page.getByRole('checkbox', { name: 'Front Desk' }).click();
     await page.getByRole('checkbox', { name: 'Point of Sale' }).nth(1).click();
-    await page.locator('label').filter({ hasText: 'Access & Roles' }).click();
-    await page.locator('label').filter({ hasText: 'Finance' }).click();
-    await page.locator('label').filter({ hasText: 'Property Home' }).click();
-    await page.getByRole('checkbox', { name: 'HR' }).click();
+    await page.getByRole('checkbox', { name: 'Cash Office' }).click();
     await page.getByRole('checkbox', { name: 'Inventory' }).click();
     await page.getByRole('checkbox', { name: 'Procurement' }).click();
     await page.getByRole('checkbox', { name: 'Website' }).click();
+    await page.getByRole('checkbox', { name: 'HR' }).click();
+    await page.getByRole('checkbox', { name: 'Access & Roles' }).click();
+    await page.getByRole('checkbox', { name: 'Finance' }).click();
+    await page.getByRole('checkbox', { name: 'Property Home' }).click();
+    await page.getByRole('checkbox', { name: 'Devices & Agent' }).click();
     await page.getByRole('button', { name: 'Add user' }).click();
     await page.waitForTimeout(2000);
 
@@ -51,36 +53,40 @@ test('test', async ({ page }) => {
     await page.getByLabel('Property Admin').getByText('Property Admin').click();
     await page.getByRole('checkbox', { name: 'Front Desk' }).click();
     await page.getByRole('checkbox', { name: 'Point of Sale' }).nth(1).click();
-    await page.locator('label').filter({ hasText: 'Access & Roles' }).click();
-    await page.locator('label').filter({ hasText: 'Finance' }).click();
-    await page.locator('label').filter({ hasText: 'Property Home' }).click();
-    await page.getByRole('checkbox', { name: 'HR' }).click();
+    await page.getByRole('checkbox', { name: 'Cash Office' }).click();
     await page.getByRole('checkbox', { name: 'Inventory' }).click();
     await page.getByRole('checkbox', { name: 'Procurement' }).click();
     await page.getByRole('checkbox', { name: 'Website' }).click();
-    await page.getByRole('button', { name: 'Add user' }).click();
-    await page.waitForTimeout(2000);
-
-    // ----- Third user -----
-
-    await page.getByRole('button', { name: 'Add user' }).click();
-    await page.getByRole('textbox', { name: 'Full name' }).click();
-    await page.getByRole('textbox', { name: 'Full name' }).fill('Lakmali Gunasingha');
-    await page.getByRole('textbox', { name: 'Email' }).click();
-    await page.getByRole('textbox', { name: 'Email' }).fill('slakmaligunasingha@gmail.com');
-    await page.getByRole('combobox').click();
-    await page.getByLabel('Property Admin').getByText('Property Admin').click();
-    await page.getByRole('checkbox', { name: 'Front Desk' }).click();
-    await page.getByRole('checkbox', { name: 'Point of Sale' }).nth(1).click();
-    await page.locator('label').filter({ hasText: 'Access & Roles' }).click();
-    await page.locator('label').filter({ hasText: 'Finance' }).click();
-    await page.locator('label').filter({ hasText: 'Property Home' }).click();
     await page.getByRole('checkbox', { name: 'HR' }).click();
-    await page.getByRole('checkbox', { name: 'Inventory' }).click();
-    await page.getByRole('checkbox', { name: 'Procurement' }).click();
-    await page.getByRole('checkbox', { name: 'Website' }).click();
+    await page.getByRole('checkbox', { name: 'Access & Roles' }).click();
+    await page.getByRole('checkbox', { name: 'Finance' }).click();
+    await page.getByRole('checkbox', { name: 'Property Home' }).click();
+    await page.getByRole('checkbox', { name: 'Devices & Agent' }).click();
     await page.getByRole('button', { name: 'Add user' }).click();
     await page.waitForTimeout(2000);
+
+    // // ----- Third user -----
+
+    // await page.getByRole('button', { name: 'Add user' }).click();
+    // await page.getByRole('textbox', { name: 'Full name' }).click();
+    // await page.getByRole('textbox', { name: 'Full name' }).fill('Lakmali Gunasingha');
+    // await page.getByRole('textbox', { name: 'Email' }).click();
+    // await page.getByRole('textbox', { name: 'Email' }).fill('slakmaligunasingha@gmail.com');
+    // await page.getByRole('combobox').click();
+    // await page.getByLabel('Property Admin').getByText('Property Admin').click();
+    // await page.getByRole('checkbox', { name: 'Front Desk' }).click();
+    // await page.getByRole('checkbox', { name: 'Point of Sale' }).nth(1).click();
+    // await page.getByRole('checkbox', { name: 'Cash Office' }).click();
+    // await page.getByRole('checkbox', { name: 'Inventory' }).click();
+    // await page.getByRole('checkbox', { name: 'Procurement' }).click();
+    // await page.getByRole('checkbox', { name: 'Website' }).click();
+    // await page.getByRole('checkbox', { name: 'HR' }).click();
+    // await page.getByRole('checkbox', { name: 'Access & Roles' }).click();
+    // await page.getByRole('checkbox', { name: 'Finance' }).click();
+    // await page.getByRole('checkbox', { name: 'Property Home' }).click();
+    // await page.getByRole('checkbox', { name: 'Devices & Agent' }).click();
+    // await page.getByRole('button', { name: 'Add user' }).click();
+    // await page.waitForTimeout(2000);
 
     // // ----- Fourth user -----
 
@@ -93,13 +99,15 @@ test('test', async ({ page }) => {
     // await page.getByLabel('Property Admin').getByText('Property Admin').click();
     // await page.getByRole('checkbox', { name: 'Front Desk' }).click();
     // await page.getByRole('checkbox', { name: 'Point of Sale' }).nth(1).click();
-    // await page.locator('label').filter({ hasText: 'Access & Roles' }).click();
-    // await page.locator('label').filter({ hasText: 'Finance' }).click();
-    // await page.locator('label').filter({ hasText: 'Property Home' }).click();
-    // await page.getByRole('checkbox', { name: 'HR' }).click();
+    // await page.getByRole('checkbox', { name: 'Cash Office' }).click();
     // await page.getByRole('checkbox', { name: 'Inventory' }).click();
     // await page.getByRole('checkbox', { name: 'Procurement' }).click();
     // await page.getByRole('checkbox', { name: 'Website' }).click();
+    // await page.getByRole('checkbox', { name: 'HR' }).click();
+    // await page.getByRole('checkbox', { name: 'Access & Roles' }).click();
+    // await page.getByRole('checkbox', { name: 'Finance' }).click();
+    // await page.getByRole('checkbox', { name: 'Property Home' }).click();
+    // await page.getByRole('checkbox', { name: 'Devices & Agent' }).click();
     // await page.getByRole('button', { name: 'Add user' }).click();
     // await page.waitForTimeout(2000);
     
@@ -114,13 +122,15 @@ test('test', async ({ page }) => {
     // await page.getByLabel('Property Admin').getByText('Property Admin').click();
     // await page.getByRole('checkbox', { name: 'Front Desk' }).click();
     // await page.getByRole('checkbox', { name: 'Point of Sale' }).nth(1).click();
-    // await page.locator('label').filter({ hasText: 'Access & Roles' }).click();
-    // await page.locator('label').filter({ hasText: 'Finance' }).click();
-    // await page.locator('label').filter({ hasText: 'Property Home' }).click();
-    // await page.getByRole('checkbox', { name: 'HR' }).click();
+    // await page.getByRole('checkbox', { name: 'Cash Office' }).click();
     // await page.getByRole('checkbox', { name: 'Inventory' }).click();
     // await page.getByRole('checkbox', { name: 'Procurement' }).click();
     // await page.getByRole('checkbox', { name: 'Website' }).click();
+    // await page.getByRole('checkbox', { name: 'HR' }).click();
+    // await page.getByRole('checkbox', { name: 'Access & Roles' }).click();
+    // await page.getByRole('checkbox', { name: 'Finance' }).click();
+    // await page.getByRole('checkbox', { name: 'Property Home' }).click();
+    // await page.getByRole('checkbox', { name: 'Devices & Agent' }).click();
     // await page.getByRole('button', { name: 'Add user' }).click();
     // await page.waitForTimeout(2000);
 
@@ -135,13 +145,15 @@ test('test', async ({ page }) => {
     // await page.getByLabel('Property Admin').getByText('Property Admin').click();
     // await page.getByRole('checkbox', { name: 'Front Desk' }).click();
     // await page.getByRole('checkbox', { name: 'Point of Sale' }).nth(1).click();
-    // await page.locator('label').filter({ hasText: 'Access & Roles' }).click();
-    // await page.locator('label').filter({ hasText: 'Finance' }).click();
-    // await page.locator('label').filter({ hasText: 'Property Home' }).click();
-    // await page.getByRole('checkbox', { name: 'HR' }).click();
+    // await page.getByRole('checkbox', { name: 'Cash Office' }).click();
     // await page.getByRole('checkbox', { name: 'Inventory' }).click();
     // await page.getByRole('checkbox', { name: 'Procurement' }).click();
     // await page.getByRole('checkbox', { name: 'Website' }).click();
+    // await page.getByRole('checkbox', { name: 'HR' }).click();
+    // await page.getByRole('checkbox', { name: 'Access & Roles' }).click();
+    // await page.getByRole('checkbox', { name: 'Finance' }).click();
+    // await page.getByRole('checkbox', { name: 'Property Home' }).click();
+    // await page.getByRole('checkbox', { name: 'Devices & Agent' }).click();
     // await page.getByRole('button', { name: 'Add user' }).click();
     // await page.waitForTimeout(2000);
 
@@ -156,13 +168,15 @@ test('test', async ({ page }) => {
     // await page.getByLabel('Property Admin').getByText('Property Admin').click();
     // await page.getByRole('checkbox', { name: 'Front Desk' }).click();
     // await page.getByRole('checkbox', { name: 'Point of Sale' }).nth(1).click();
-    // await page.locator('label').filter({ hasText: 'Access & Roles' }).click();
-    // await page.locator('label').filter({ hasText: 'Finance' }).click();
-    // await page.locator('label').filter({ hasText: 'Property Home' }).click();
-    // await page.getByRole('checkbox', { name: 'HR' }).click();
+    // await page.getByRole('checkbox', { name: 'Cash Office' }).click();
     // await page.getByRole('checkbox', { name: 'Inventory' }).click();
     // await page.getByRole('checkbox', { name: 'Procurement' }).click();
     // await page.getByRole('checkbox', { name: 'Website' }).click();
+    // await page.getByRole('checkbox', { name: 'HR' }).click();
+    // await page.getByRole('checkbox', { name: 'Access & Roles' }).click();
+    // await page.getByRole('checkbox', { name: 'Finance' }).click();
+    // await page.getByRole('checkbox', { name: 'Property Home' }).click();
+    // await page.getByRole('checkbox', { name: 'Devices & Agent' }).click();
     // await page.getByRole('button', { name: 'Add user' }).click();
     // await page.waitForTimeout(2000);
     
